@@ -14,8 +14,13 @@ class TrendingScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        leading: const AppDrawerLeadingButton(),
         title: Text('Trending'),
+        actions: [
+          const AppBarSearchButton(),
+        ],
       ),
+      drawer: const AppDrawer(),
       body: Observer(
         builder: (_) {
           if (!store.hasResults) {

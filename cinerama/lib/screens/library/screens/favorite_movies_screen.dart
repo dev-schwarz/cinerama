@@ -24,20 +24,16 @@ class FavoriteMoviesScreen extends StatelessWidget {
           },
         ),
         actions: [
-          Observer(
-            builder: (_) {
-              return IconButton(
-                icon: const Icon(
-                  Icons.swap_vert,
-                  size: 20.0,
-                  color: Colors.yellowAccent,
-                ),
-                visualDensity: VisualDensity.compact,
-                // tooltip: context.i18n.tmdb.sortOrderSwitch(store.favoriteMoviesSortBy.order),
-                tooltip: 'Favorite',
-                onPressed: store.toggleFavoriteMoviesSortBy,
-              );
-            },
+          IconButton(
+            icon: const Icon(
+              Icons.swap_vert,
+              size: 20.0,
+              color: Colors.yellowAccent,
+            ),
+            visualDensity: VisualDensity.compact,
+            // tooltip: context.i18n.tmdb.sortOrderSwitch(store.favoriteMoviesSortBy.order),
+            tooltip: 'Favorite',
+            onPressed: store.toggleFavoriteMoviesSortBy,
           ),
         ],
       ),

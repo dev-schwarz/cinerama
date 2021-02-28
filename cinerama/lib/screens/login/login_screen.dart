@@ -35,55 +35,67 @@ class _Welcome extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(_hrPadding, 0.0, _hrPadding, 80.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              'Access to your TMDb account',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline5,
-            ),
-            const Divider(color: Colors.grey, thickness: 1.5),
-            const SizedBox(height: 10.0),
-            Text(
-              'Cinemascope needs access to your TMDb account.',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyText1.copyWith(fontSize: 16.0),
-            ),
-            const SizedBox(height: 40.0),
-            IndentedText(
-              'We will redirect you to the TMDb site, where you need to grant permission '
-              'to Cinemascope, so it will have access to your account data.',
-              textAlign: TextAlign.justify,
-              style: Theme.of(context).textTheme.bodyText1.copyWith(fontSize: 15.0),
-            ),
-            const SizedBox(height: 80.0),
-            Padding(
-              padding: _btnPadding,
-              child: RaisedButton(
-                onPressed: () {},
-                child: Text(
-                  'Grant access from TMDb',
-                  style: btnStyle,
+        child: ButtonTheme(
+          height: 36.0,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(18.0)),
+          ),
+          buttonColor: Colors.purple.shade700,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                'Access to your TMDb account',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.headline5,
+              ),
+              const Divider(color: Colors.grey, thickness: 1.5),
+              const SizedBox(height: 10.0),
+              Text(
+                'Cinemascope needs access to your TMDb account.',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyText1.copyWith(fontSize: 16.0),
+              ),
+              const SizedBox(height: 40.0),
+              IndentedText(
+                'We will redirect you to the TMDb site, where you need to grant permission '
+                'to Cinemascope, so it will have access to your account data.',
+                textAlign: TextAlign.justify,
+                style: Theme.of(context).textTheme.bodyText1.copyWith(fontSize: 15.0),
+              ),
+              const SizedBox(height: 80.0),
+              Padding(
+                padding: _btnPadding,
+                child: RaisedButton(
+                  onPressed: () {
+                    Modular.to.pushNamed(AppRoutes.tmdbAccess);
+                  },
+                  elevation: 10.0,
+                  child: Text(
+                    'Grant access from TMDb',
+                    style: btnStyle,
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: _btnPadding,
-              child: RaisedButton(
-                onPressed: () {
-                  Modular.get<LoginStore>().loginAndSaveFakeUser().whenComplete(() {
-                    Modular.to.pushReplacementNamed(AppRoutes.initial);
-                  });
-                },
-                child: Text(
-                  'Perform a fake login',
-                  style: btnStyle,
+              Padding(
+                padding: _btnPadding,
+                child: RaisedButton(
+                  onPressed: () {
+                    Modular.get<LoginStore>().loginAndSaveFakeUser(true).whenComplete(() {
+                      Modular.to.pushReplacementNamed(AppRoutes.initial);
+                    });
+                  },
+                  elevation: 10.0,
+                  color: Colors.red.shade800,
+                  child: Text(
+                    'Perform a fake login',
+                    style: btnStyle,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

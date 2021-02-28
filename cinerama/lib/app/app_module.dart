@@ -3,6 +3,8 @@ import 'package:tmdb_repository/tmdb_repository.dart';
 
 import '../global/app_routes.dart';
 import '../material.dart';
+import '../screens/drawer_screens/about/about_screen.dart';
+import '../screens/drawer_screens/settings/settings_screen.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/initial/initial_screen.dart';
 import '../screens/library/screens/favorite_movies_screen.dart';
@@ -10,13 +12,16 @@ import '../screens/library/screens/favorite_tvs_screen.dart';
 import '../screens/library/screens/user_list_screen.dart';
 import '../screens/library/screens/watch_list_movies_screen.dart';
 import '../screens/library/screens/watch_list_tvs_screen.dart';
-import '../screens/login/login_module.dart';
+import '../screens/login/login_screen.dart';
+import '../screens/login/tmdb_access/tmdb_access_module.dart';
 import '../screens/media/screens/movie_screen.dart';
+import '../screens/search/search_screen.dart';
 import '../services/prefs_service.dart';
 import '../services/tmdb_service.dart';
 import '../stores/controllers/home_screen_controller.dart';
 import '../stores/login/login_store.dart';
 import '../stores/media/media_store.dart';
+import '../stores/settings_store.dart';
 import '../stores/user_data/user_data_store.dart';
 import 'app_widget.dart';
 
@@ -25,6 +30,7 @@ class AppModule extends MainModule {
   List<Bind> get binds => [
         Bind((i) => TmdbService.init(_TmdbApiInitializer._initApi())),
         Bind((i) => PrefsService()),
+        Bind((i) => SettingsStore(), lazy: false),
         Bind((i) => LoginStore(clearUserData: false)),
         Bind((i) => UserDataStore()),
         Bind((i) => HomeScreenController()),
@@ -36,11 +42,13 @@ class AppModule extends MainModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter(AppRoutes.initial, child: (_, __) => const InitialScreen()),
-        ModularRouter(AppRoutes.login, module: LoginModule()),
+        // ModularRouter(AppRoutes.login, module: LoginModule()),
+        ModularRouter(AppRoutes.login, child: (_, __) => const LoginScreen()),
+        ModularRouter(AppRoutes.tmdbAccess, module: TmdbAccessModule()),
         ModularRouter(AppRoutes.home, child: (_, __) => const HomeScreen()),
-        ModularRouter(AppRoutes.search, child: (_, __) => null),
-        ModularRouter(AppRoutes.appAbout, child: (_, __) => null),
-        ModularRouter(AppRoutes.appSettings, child: (_, __) => null),
+        ModularRouter(AppRoutes.search, child: (_, __) => const SearchScreen()),
+        ModularRouter(AppRoutes.appAbout, child: (_, __) => const AboutScreen()),
+        ModularRouter(AppRoutes.appSettings, child: (_, __) => const SettingsScreen()),
         ModularRouter(
           AppRoutes.libraryFavoriteMovies,
           child: (_, __) => const FavoriteMoviesScreen(),

@@ -103,13 +103,13 @@ class _TempScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        // leading: const AppDrawerLeadingButton(),
+        leading: const AppDrawerLeadingButton(),
         title: Text(title),
         actions: const [
-          // const AppBarSearchButton(),
+          const AppBarSearchButton(),
         ],
       ),
-      // drawer: const AppDrawer(),
+      drawer: const AppDrawer(),
       body: Center(
         child: Text(
           title,

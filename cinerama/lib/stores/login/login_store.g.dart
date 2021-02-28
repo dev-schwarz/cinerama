@@ -50,17 +50,17 @@ mixin _$LoginStore on _LoginStoreBase, Store {
       AsyncAction('_LoginStoreBase.loginFakeUser');
 
   @override
-  Future<dynamic> loginFakeUser() {
-    return _$loginFakeUserAsyncAction.run(() => super.loginFakeUser());
+  Future<dynamic> loginFakeUser(bool mainUser) {
+    return _$loginFakeUserAsyncAction.run(() => super.loginFakeUser(mainUser));
   }
 
   final _$loginAndSaveFakeUserAsyncAction =
       AsyncAction('_LoginStoreBase.loginAndSaveFakeUser');
 
   @override
-  Future<dynamic> loginAndSaveFakeUser() {
+  Future<dynamic> loginAndSaveFakeUser(bool mainUser) {
     return _$loginAndSaveFakeUserAsyncAction
-        .run(() => super.loginAndSaveFakeUser());
+        .run(() => super.loginAndSaveFakeUser(mainUser));
   }
 
   final _$logoutAsyncAction = AsyncAction('_LoginStoreBase.logout');
@@ -75,6 +75,15 @@ mixin _$LoginStore on _LoginStoreBase, Store {
   @override
   Future<dynamic> _login(TmdbUserCredentials credentials) {
     return _$_loginAsyncAction.run(() => super._login(credentials));
+  }
+
+  final _$retryLoginCurrentUserAsyncAction =
+      AsyncAction('_LoginStoreBase.retryLoginCurrentUser');
+
+  @override
+  Future<dynamic> retryLoginCurrentUser() {
+    return _$retryLoginCurrentUserAsyncAction
+        .run(() => super.retryLoginCurrentUser());
   }
 
   final _$_LoginStoreBaseActionController =

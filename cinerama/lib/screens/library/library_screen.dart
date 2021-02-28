@@ -10,13 +10,13 @@ class LibraryScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        // leading: const AppDrawerLeadingButton(),
+        leading: const AppDrawerLeadingButton(),
         title: Text('Library'),
         actions: const [
-          // const AppBarSearchButton(),
+          const AppBarSearchButton(),
         ],
       ),
-      // drawer: const AppDrawer(),
+      drawer: const AppDrawer(),
       body: SingleChildScrollView(
         padding: EdgeInsets.zero,
         child: Padding(

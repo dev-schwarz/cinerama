@@ -25,7 +25,6 @@ class InitialScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Observer(
       builder: (_) {
-        print(context.loginStore.loginStep);
         if (context.loginStore.loginStep == LoginStep.starting) {
           return const BigLoadingIndicator(
             iconData: null,
@@ -57,7 +56,9 @@ class InitialScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 10.0),
                       RaisedButton(
-                        onPressed: context.loginStore.loginFakeUser,
+                        onPressed: () {
+                          context.loginStore.loginFakeUser(true);
+                        },
                         elevation: 10.0,
                         color: Colors.red.shade800,
                         child: const Text('Temporary Fake Login'),

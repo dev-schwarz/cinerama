@@ -44,21 +44,28 @@ abstract class _LoginStoreBase with Store {
   bool get hasUser => user?.hasUserLoggedIn ?? false;
 
   @action
-  Future loginFakeUser() async {
+  Future loginFakeUser(bool mainUser) async {
     final TmdbUserCredentials credentials = TmdbUserCredentials(
-      sessionId: _LoginConstants.fakeSessionId,
-      accountId: _LoginConstants.fakeAccountId,
-      accessToken: _LoginConstants.fakeAccessToken,
+      sessionId:
+          (mainUser ?? true) ? _LoginConstants.fakeSessionId : _LoginConstants.fakeSessionId2,
+      accountId:
+          (mainUser ?? true) ? _LoginConstants.fakeAccountId : _LoginConstants.fakeAccountId2,
+      accessToken:
+          (mainUser ?? true) ? _LoginConstants.fakeAccessToken : _LoginConstants.fakeAccessToken2,
     );
-    _login(credentials);
+    await _login(credentials);
+    loginStep = LoginStep.userLogged;
   }
 
   @action
-  Future loginAndSaveFakeUser() async {
+  Future loginAndSaveFakeUser(bool mainUser) async {
     final TmdbUserCredentials credentials = TmdbUserCredentials(
-      sessionId: _LoginConstants.fakeSessionId,
-      accountId: _LoginConstants.fakeAccountId,
-      accessToken: _LoginConstants.fakeAccessToken,
+      sessionId:
+          (mainUser ?? true) ? _LoginConstants.fakeSessionId : _LoginConstants.fakeSessionId2,
+      accountId:
+          (mainUser ?? true) ? _LoginConstants.fakeAccountId : _LoginConstants.fakeAccountId2,
+      accessToken:
+          (mainUser ?? true) ? _LoginConstants.fakeAccessToken : _LoginConstants.fakeAccessToken2,
     );
     await _saveCredentials(credentials);
     _autoLoginCurrentUser();
@@ -87,6 +94,11 @@ abstract class _LoginStoreBase with Store {
     final AccountDetails accountDetails = await _tmdb.api.account.getDetails();
     // loginStep = LoginStep.userLogged;
     setUser(_mapAccountDetailsToUser(accountDetails, credentials));
+  }
+
+  @action
+  Future retryLoginCurrentUser() async {
+    _autoLoginCurrentUser();
   }
 
   void _autoLoginCurrentUser() {
@@ -153,4 +165,9 @@ class _LoginConstants {
   static const fakeAccountId = r'''5eb4bb017ac8290022228128''';
   static const fakeAccessToken =
       r'''eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MDQ2MzI0NDksInN1YiI6IjVlYjRiYjAxN2FjODI5MDAyMjIyODEyOCIsImp0aSI6IjI1MzI1NzgiLCJhdWQiOiJmZmVhNGNhMTA5OWM2Zjk0NWNmZTkxMmUwODA1NmJlMiIsInNjb3BlcyI6WyJhcGlfcmVhZCIsImFwaV93cml0ZSJdLCJ2ZXJzaW9uIjoxfQ.nLFgA3mCMoUHFy4xbE5F3CJTpLfzUvjPlDye9eae0io''';
+
+  static const fakeSessionId2 = r'''1a559276455b0f6cab9322a5d420271c9e10450d''';
+  static const fakeAccountId2 = r'''5d3fa5e934e1521fb8e79d51''';
+  static const fakeAccessToken2 =
+      r'''eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyODU0NzI5Iiwic2NvcGVzIjpbImFwaV9yZWFkIiwiYXBpX3dyaXRlIl0sIm5iZiI6MTYxNDQ3ODQ0MCwiYXVkIjoiZmZlYTRjYTEwOTljNmY5NDVjZmU5MTJlMDgwNTZiZTIiLCJzdWIiOiI1ZDNmYTVlOTM0ZTE1MjFmYjhlNzlkNTEiLCJ2ZXJzaW9uIjoxfQ._g3oznlj347twCkyKo4j2SohaSGmDUgi5f3lUjV4PL8''';
 }
