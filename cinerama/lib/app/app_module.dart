@@ -42,7 +42,6 @@ class AppModule extends MainModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter(AppRoutes.initial, child: (_, __) => const InitialScreen()),
-        // ModularRouter(AppRoutes.login, module: LoginModule()),
         ModularRouter(AppRoutes.login, child: (_, __) => const LoginScreen()),
         ModularRouter(AppRoutes.tmdbAccess, module: TmdbAccessModule()),
         ModularRouter(AppRoutes.home, child: (_, __) => const HomeScreen()),
