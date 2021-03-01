@@ -4,6 +4,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import '../../material.dart';
 import '../../stores/controllers/home_screen_controller.dart';
 import '../../stores/results/trending_store.dart';
+import '../discover/discover_movies_screen.dart';
 import '../library/library_screen.dart';
 import '../trending/trending_screen.dart';
 
@@ -30,7 +31,8 @@ class _HomeScreenState extends ModularState<HomeScreen, HomeScreenController> {
       _BottomNavBarItemData(
         icon: Icons.new_releases,
         label: 'Discover',
-        child: _TempScreen('Discover'),
+        child: const DiscoverMoviesScreen(),
+        // child: _TempScreen('Discover'),
       ),
       _BottomNavBarItemData(
         icon: Icons.assignment,
