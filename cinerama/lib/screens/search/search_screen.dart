@@ -31,8 +31,8 @@ class _SearchScreenState extends State<SearchScreen> {
       appBar: AppBar(
         elevation: 0.0,
         title: Column(
-          children: const [
-            const Text('Search'),
+          children: [
+            Text(context.i18n.screens.search.title),
           ],
         ),
         actions: [
@@ -50,15 +50,15 @@ class _SearchScreenState extends State<SearchScreen> {
             child: Observer(
               builder: (_) {
                 if (!_searchStore.hasResults) {
-                  return const BigIconMessage(
+                  return BigIconMessage(
                     iconData: Icons.search,
-                    message: 'Search',
+                    message: context.i18n.screens.search.title,
                   );
                 } else {
                   if (_searchStore.searchMulti.totalResults == 0) {
-                    return const BigIconMessage(
+                    return BigIconMessage(
                       iconData: Icons.sentiment_dissatisfied,
-                      message: 'No results found',
+                      message: context.i18n.screens.search.noResults,
                     );
                   } else {
                     return Observer(

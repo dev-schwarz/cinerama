@@ -26,8 +26,8 @@ class MediaRatingButton extends StatelessWidget {
               ? () => _openRatingModalDialog(context, isRated, ratingValue)
               : null,
           iconData: Icons.star,
-          label: 'Rate',
-          tooltip: 'Rate',
+          label: context.i18n.mediaButtons.rate,
+          tooltip: context.i18n.mediaButtons.rateTooltip(isRated),
           iconColor: isRated ? Colors.amber : null,
         );
       },
@@ -124,7 +124,7 @@ class __RatingDialogState extends State<_RatingDialog> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 12.0),
             child: Text(
-              'Rate',
+              context.i18n.mediaButtons.rate,
               style: context.theme.textTheme.headline6,
             ),
           ),
@@ -139,17 +139,17 @@ class __RatingDialogState extends State<_RatingDialog> {
               FlatButton(
                 textColor: Colors.grey,
                 onPressed: widget.onCancel,
-                child: const Text('CANCEL'),
+                child: Text(context.i18n.general.cancel.toUpperCase()),
               ),
               FlatButton(
                 textColor: Colors.redAccent[200],
                 onPressed: widget.isRated ? widget.onClear : null,
-                child: const Text('CLEAR'),
+                child: Text(context.i18n.general.clear.toUpperCase()),
               ),
               FlatButton(
                 textColor: Colors.blueAccent[200],
                 onPressed: _canRate ? () => widget.onRate(_value) : null,
-                child: const Text('RATE'),
+                child: Text(context.i18n.mediaButtons.rate.toUpperCase()),
               ),
             ],
           ),

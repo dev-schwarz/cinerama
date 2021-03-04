@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
+import 'global/localizations/app_localizations.dart';
 import 'stores/login/login_store.dart';
 import 'stores/settings_store.dart';
 import 'stores/user_data/user_data_store.dart';
@@ -15,6 +16,10 @@ extension AppThemesExtension on BuildContext {
   AppThemeData get appTheme => AppTheme.of(this);
 
   ThemeData get theme => Theme.of(this);
+}
+
+extension AppLocalizationsExtension on BuildContext {
+  AppLocalizations get i18n => AppLocalizations.of(this);
 }
 
 extension AppStoresExtension on BuildContext {

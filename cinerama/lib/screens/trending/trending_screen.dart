@@ -15,7 +15,7 @@ class TrendingScreen extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         leading: const AppDrawerLeadingButton(),
-        title: Text('Trending'),
+        title: Text(context.i18n.screens.titles.trending),
         actions: [
           const AppBarSearchButton(),
         ],
@@ -24,10 +24,10 @@ class TrendingScreen extends StatelessWidget {
       body: Observer(
         builder: (_) {
           if (!store.hasResults) {
-            return const BigLoadingIndicator(
+            return BigLoadingIndicator(
               iconData: Icons.trending_up,
-              title: 'Loading',
-              message: 'Trending',
+              title: context.i18n.general.loading,
+              message: context.i18n.screens.titles.trending,
             );
           } else {
             return ResultsView<Trending>(

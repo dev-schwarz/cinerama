@@ -22,13 +22,27 @@ class _SettingsScreenState extends State<SettingsScreen> {
   ResultsViewType _resultsViewType;
 
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    super.didChangeDependencies();
 
     _resultsViewType = AppConfig.resultsViewType;
     _includeAdult = TmdbConfig.includeAdult;
     _imageHighQuality = TmdbConfig.posterSize != PosterSize.w92;
-    _options = _optionsItems
+
+    final List<_OptionItemData> optionsItems = [
+      _OptionItemData(
+        title: context.i18n.screens.settingsScreen.language,
+        iconData: Icons.language,
+        child: const _SettingsLanguagesScreen(),
+      ),
+      _OptionItemData(
+        title: context.i18n.screens.settingsScreen.region,
+        iconData: Icons.location_on,
+        child: const _SettingsRegionsScreen(),
+      ),
+    ];
+
+    _options = optionsItems
         .map((option) => ListTile(
               contentPadding: _tilePadding,
               title: Text(option.title),
@@ -51,7 +65,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: Text(context.i18n.screens.titles.settings),
       ),
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
@@ -65,19 +79,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return <Widget>[
       ..._options,
       LabeledSwitch(
-        label: 'Include adult',
+        label: context.i18n.screens.settingsScreen.includeAdult,
         value: _includeAdult,
         onChanged: (value) {
           setState(() {
             _includeAdult = value;
           });
           TmdbConfig.includeAdult = value;
-          // context.settingsStore.saveSettings();
           _saveSettings();
         },
       ),
       LabeledSwitch(
-        label: 'Image high quality',
+        label: context.i18n.screens.settingsScreen.imageHighQuality,
         value: _imageHighQuality,
         onChanged: (value) {
           setState(() {
@@ -94,11 +107,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Widget _resultsViewTypeWidget() {
-    const List<String> values = ['List', 'Grid'];
+    final List<String> values = [
+      context.i18n.screens.settingsScreen.list,
+      context.i18n.screens.settingsScreen.grid,
+    ];
 
     return LabeledDropdown<ResultsViewType>(
       value: _resultsViewType,
-      label: 'View mode',
+      label: context.i18n.screens.settingsScreen.viewMode,
       items: <ResultsViewType>[ResultsViewType.list, ResultsViewType.grid].toList(),
       itemBuilder: (item) => values[item.index],
       onChanged: (value) {
@@ -117,19 +133,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   static const _iconBox = const SizedBox(width: 24.0, height: 24.0);
   static const _tilePadding = const EdgeInsets.all(16.0);
-
-  static const _optionsItems = <_OptionItemData>[
-    const _OptionItemData(
-      title: 'Language',
-      iconData: Icons.language,
-      child: const _SettingsLanguagesScreen(),
-    ),
-    const _OptionItemData(
-      title: 'Region',
-      iconData: Icons.location_on,
-      child: const _SettingsRegionsScreen(),
-    ),
-  ];
 }
 
 @immutable

@@ -21,7 +21,20 @@ class AppDrawer extends StatelessWidget {
   }
 
   List<Widget> _getItems(BuildContext context) {
-    return _appDrawerItems
+    final List<_AppDrawerItem> appDrawerItems = [
+      _AppDrawerItem(
+        index: 0,
+        routeName: AppRoutes.appSettings,
+        title: context.i18n.screens.titles.settings,
+      ),
+      _AppDrawerItem(
+        index: 1,
+        routeName: AppRoutes.appAbout,
+        title: context.i18n.screens.titles.about,
+      ),
+    ];
+
+    return appDrawerItems
         .map(
           (item) => ListTile(
             title: Text(item.title),
@@ -32,11 +45,6 @@ class AppDrawer extends StatelessWidget {
         )
         .toList();
   }
-
-  static const _appDrawerItems = const <_AppDrawerItem>[
-    _AppDrawerItem(index: 0, routeName: AppRoutes.appSettings, title: 'Settings'),
-    _AppDrawerItem(index: 1, routeName: AppRoutes.appAbout, title: 'About'),
-  ];
 }
 
 class _AppDrawerHeader extends StatelessWidget {

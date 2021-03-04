@@ -51,8 +51,7 @@ class _DiscoverMoviesSortSelector extends StatelessWidget {
               width: 90.0,
               child: Center(
                 child: Text(
-                  'Sort order',
-                  // context.i18n.pages.discoverMovies.sortText(sortBy),
+                  context.i18n.screens.discoverMoviesScreen.sortText(sortBy),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -96,10 +95,9 @@ class _DiscoverMoviesSortSelector extends StatelessWidget {
                 ),
                 Expanded(
                   child: Text(
-                    'Sort order',
-                    // context.i18n.pages.discoverMovies.orderText(
-                    //   SortOrder.values[filterStore.sortBy.order.index],
-                    // ),
+                    context.i18n.screens.discoverMoviesScreen.orderText(
+                      SortOrder.values[filterStore.sortBy.order.index],
+                    ),
                     style: _getTextStyle(context, false),
                   ),
                 ),

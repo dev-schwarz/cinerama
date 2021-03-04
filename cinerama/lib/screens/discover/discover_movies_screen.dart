@@ -92,7 +92,9 @@ class _DiscoverMoviesScreenState extends State<DiscoverMoviesScreen>
             opacity: _viewStore.actionIconOpacity,
             child: IconButton(
               icon: Icon(_viewStore.actionIconData),
-              tooltip: _viewStore.setupMode ? 'Apply' : 'Setup',
+              tooltip: _viewStore.setupMode
+                  ? context.i18n.screens.discoverMoviesScreen.applyButton
+                  : context.i18n.screens.discoverMoviesScreen.setupButton,
               color: context.theme.iconTheme.color,
               onPressed: _viewStore.isAnimating
                   ? null
@@ -117,7 +119,9 @@ class _DiscoverMoviesScreenState extends State<DiscoverMoviesScreen>
         return Opacity(
           opacity: _viewStore.actionIconOpacity,
           child: Text(
-            _viewStore.setupMode ? 'Setup Filters' : 'Discover Movies',
+            _viewStore.setupMode
+                ? context.i18n.screens.discoverMoviesScreen.setupTitle
+                : context.i18n.screens.discoverMoviesScreen.pageTitle,
           ),
         );
       },
@@ -133,7 +137,7 @@ class _DiscoverMoviesScreenState extends State<DiscoverMoviesScreen>
             child: IconButton(
               icon: const Icon(Icons.close),
               disabledColor: context.theme.iconTheme.color,
-              tooltip: 'Close',
+              tooltip: context.i18n.screens.discoverMoviesScreen.closeButton,
               onPressed: _viewStore.isAnimating ? null : () => _hideSetupDialog(resetFilter: true),
             ),
           );

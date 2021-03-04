@@ -33,26 +33,24 @@ mixin MediaHelperMixin<T, E extends StatefulWidget> on State<E> implements TmdbH
         (_) => mediaStore.mediaAction,
         (MediaItemAction action) {
           if (action is MediaItemActionFavorite) {
-            // _sendToSnackBar(context.i18n.snackBarMessages.mediaFavoriteChanged(
-            //   action.favorite,
-            // ));
-            _sendToSnackBar('Favorite Toggled');
+            _sendToSnackBar(
+              context.i18n.snackBarMessages.favoriteChanged(action.favorite),
+            );
           } else if (action is MediaItemActionWatchList) {
-            // _sendToSnackBar(context.i18n.snackBarMessages.mediaWatchListChanged(
-            //   action.watchList,
-            // ));
-            _sendToSnackBar('Watch List Toggled');
+            _sendToSnackBar(
+              context.i18n.snackBarMessages.watchListChanged(action.watchList),
+            );
           } else if (action is MediaItemActionRate) {
-            // _sendToSnackBar(context.i18n.snackBarMessages.mediaRateChanged(
-            //   action.rated,
-            // ));
-            _sendToSnackBar('Rating Changed');
+            _sendToSnackBar(
+              context.i18n.snackBarMessages.rateChanged(action.rated),
+            );
           } else if (action is MediaItemActionLists) {
-            // _sendToSnackBar(context.i18n.snackBarMessages.mediaListsChanged(
-            //   action.listsAdded,
-            //   action.listsRemoved,
-            // ));
-            _sendToSnackBar('Lists Updated');
+            _sendToSnackBar(
+              context.i18n.snackBarMessages.listsChanged(
+                action.listsAdded,
+                action.listsRemoved,
+              ),
+            );
           }
         },
       ),

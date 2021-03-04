@@ -15,8 +15,8 @@ class MediaListButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return _MediaButton(
       iconData: Icons.playlist_add,
-      label: 'Lists',
-      tooltip: 'lists',
+      label: context.i18n.mediaButtons.playlist,
+      tooltip: context.i18n.mediaButtons.playlistTooltip,
       onTap: () => _openListPage(context),
     );
   }

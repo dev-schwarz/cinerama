@@ -23,8 +23,8 @@ class MediaWatchListButton extends StatelessWidget {
           onTap:
               mediaStore.hasAccountStatesData ? () => mediaStore.setWatchList(!onWatchList) : null,
           iconData: Icons.watch_later,
-          label: 'Watch List',
-          tooltip: 'Add to watch list',
+          label: context.i18n.mediaButtons.watchList,
+          tooltip: context.i18n.mediaButtons.watchListTooltip(onWatchList),
           iconColor: onWatchList ? Colors.indigo[300] : null,
         );
       },

@@ -22,15 +22,15 @@ class __SettingsRegionsScreenState extends State<_SettingsRegionsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings - Regions'),
+        title: Text(context.i18n.screens.titles.settingsRegions),
       ),
       body: FutureBuilder<Map<TmdbConfigurationRegion, String>>(
         future: _values,
         builder: (ctx, snapshot) {
           if (!snapshot.hasData) {
-            return const BigLoadingIndicator(
+            return BigLoadingIndicator(
               iconData: Icons.location_on,
-              title: 'Loading',
+              title: context.i18n.general.loading,
             );
           }
 

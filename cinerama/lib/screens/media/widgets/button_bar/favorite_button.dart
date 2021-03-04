@@ -20,8 +20,8 @@ class MediaFavoriteButton extends StatelessWidget {
         return _MediaButton(
           onTap: mediaStore.hasAccountStatesData ? () => mediaStore.setFavorite(!isFavorite) : null,
           iconData: isFavorite ? Icons.favorite : Icons.favorite_border,
-          label: 'Favorite',
-          tooltip: 'Add to favorites',
+          label: context.i18n.mediaButtons.favorite,
+          tooltip: context.i18n.mediaButtons.favoriteTooltip(isFavorite),
           iconColor: isFavorite ? const Color(0xffd50000) : null,
         );
       },

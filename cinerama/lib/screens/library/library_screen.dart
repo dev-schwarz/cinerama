@@ -11,7 +11,7 @@ class LibraryScreen extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         leading: const AppDrawerLeadingButton(),
-        title: Text('Library'),
+        title: Text(context.i18n.screens.titles.library),
         actions: const [
           const AppBarSearchButton(),
         ],

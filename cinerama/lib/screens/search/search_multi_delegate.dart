@@ -17,7 +17,7 @@ class SearchMultiDelegate extends SearchDelegate<String> with TmdbHelperMixin {
       if (query.isNotEmpty)
         IconButton(
           icon: const Icon(Icons.clear),
-          tooltip: 'Clear',
+          tooltip: context.i18n.screens.search.btnClear,
           onPressed: () {
             query = '';
           },
@@ -57,9 +57,9 @@ class SearchMultiDelegate extends SearchDelegate<String> with TmdbHelperMixin {
     return Observer(
       builder: (_) {
         if (!store.hasSuggestions) {
-          return const BigLoadingIndicator(
+          return BigLoadingIndicator(
             iconData: Icons.search,
-            title: 'Searching',
+            title: context.i18n.screens.search.searching,
           );
         }
 
@@ -85,7 +85,7 @@ class SearchMultiDelegate extends SearchDelegate<String> with TmdbHelperMixin {
     }
 
     return ListTile(
-      title: Text(title ?? 'Unknown media type'),
+      title: Text(title ?? context.i18n.screens.search.unknownMediaType),
       leading: Icon(title != null ? getMediaTypeIcon(resumedMedia.mediaType) : Icons.play_arrow),
       onTap: () {
         close(context, title);

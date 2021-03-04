@@ -22,15 +22,15 @@ class __SettingsLanguagesScreenState extends State<_SettingsLanguagesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings - Languages'),
+        title: Text(context.i18n.screens.titles.settingsLanguages),
       ),
       body: FutureBuilder<Map<TmdbConfigurationLanguage, String>>(
         future: _values,
         builder: (ctx, snapshot) {
           if (!snapshot.hasData) {
-            return const BigLoadingIndicator(
+            return BigLoadingIndicator(
               iconData: Icons.language,
-              title: 'Loading',
+              title: context.i18n.general.loading,
             );
           }
 

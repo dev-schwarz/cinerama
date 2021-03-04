@@ -117,7 +117,7 @@ class __TmdbSplashState extends State<_TmdbSplash>
           child: Column(
             children: [
               Text(
-                'Welcome',
+                context.i18n.general.welcome,
                 style: context.theme.textTheme.subtitle2,
               ),
               const SizedBox(height: 10.0),

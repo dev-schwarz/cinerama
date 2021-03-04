@@ -1,0 +1,352 @@
+{
+  "@@locale": "pt",
+  "@@last_modified": "2021-03-01T20:53:59.537978",
+  "appTitle": "Cinerama",
+  "@appTitle": {
+    "description": "App main title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_General_welcome": "Bem-vindo",
+  "@_General_welcome": {
+    "description": "[General]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_General_yes": "{firstLetterUCase,select, true{Sim}false{sim}}",
+  "@_General_yes": {
+    "description": "[General]",
+    "type": "text",
+    "placeholders": {
+      "firstLetterUCase": {}
+    }
+  },
+  "_General_no": "{firstLetterUCase,select, true{Não}false{não}}",
+  "@_General_no": {
+    "description": "[General]",
+    "type": "text",
+    "placeholders": {
+      "firstLetterUCase": {}
+    }
+  },
+  "_General_yesNo": "{yes,select, true{sim}false{não}}",
+  "@_General_yesNo": {
+    "description": "[General]",
+    "type": "text",
+    "placeholders": {
+      "yes": {}
+    }
+  },
+  "_General_loading": "Carregando",
+  "@_General_loading": {
+    "description": "[General]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_General_cancel": "Cancelar",
+  "@_General_cancel": {
+    "description": "[General]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_General_clear": "Limpar",
+  "@_General_clear": {
+    "description": "[General]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_trending": "Em Destaque",
+  "@_ScreensTitles_trending": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_discover": "Descubra",
+  "@_ScreensTitles_discover": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_assignments": "Inscrições",
+  "@_ScreensTitles_assignments": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_library": "Biblioteca",
+  "@_ScreensTitles_library": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settings": "Configurações",
+  "@_ScreensTitles_settings": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settingsLanguages": "Selecione um idioma",
+  "@_ScreensTitles_settingsLanguages": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settingsRegions": "Selecione uma região",
+  "@_ScreensTitles_settingsRegions": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_about": "Sobre",
+  "@_ScreensTitles_about": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_includeAdult": "Incluir adulto",
+  "@_SettingsScreen_includeAdult": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_imageHighQuality": "Imagem de alta qualidade",
+  "@_SettingsScreen_imageHighQuality": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_viewMode": "Modo de exibição",
+  "@_SettingsScreen_viewMode": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_list": "Lista",
+  "@_SettingsScreen_list": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_grid": "Grade",
+  "@_SettingsScreen_grid": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_language": "Idioma",
+  "@_SettingsScreen_language": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_region": "Região",
+  "@_SettingsScreen_region": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_pageTitle": "Descobrir Filmes",
+  "@_DiscoverMoviesScreen_pageTitle": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_setupTitle": "Descobrir Filmes - Filtros",
+  "@_DiscoverMoviesScreen_setupTitle": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_setupButton": "Configurar Filtros",
+  "@_DiscoverMoviesScreen_setupButton": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_closeButton": "Fechar",
+  "@_DiscoverMoviesScreen_closeButton": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_applyButton": "Aplicar",
+  "@_DiscoverMoviesScreen_applyButton": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen__sortText": "{sortText,select, popularity{Popularidade}original_title{Título}release_date{Lançamento}vote_average{Avaliação}vote_count{Mais votados}revenue{Renda}}",
+  "@_DiscoverMoviesScreen__sortText": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {
+      "sortText": {}
+    }
+  },
+  "_DiscoverMoviesScreen_orderText": "{order,select, asc{Ordem ascending}desc{Ordem descendente}}",
+  "@_DiscoverMoviesScreen_orderText": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {
+      "order": {}
+    }
+  },
+  "_DiscoverMoviesScreen_year": "Ano",
+  "@_DiscoverMoviesScreen_year": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_ofRelease": "de lançamento",
+  "@_DiscoverMoviesScreen_ofRelease": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_yearOfReleaseHint": "Exemplo: 2004",
+  "@_DiscoverMoviesScreen_yearOfReleaseHint": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_yearOfReleaseError": "Ano inválido",
+  "@_DiscoverMoviesScreen_yearOfReleaseError": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_Search_title": "Pesquisar",
+  "@_Search_title": {
+    "description": "[Screens][Search]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_Search_noResults": "Nenhum resultado encontrado",
+  "@_Search_noResults": {
+    "description": "[Screens][Search]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_Search_btnClear": "Limpar",
+  "@_Search_btnClear": {
+    "description": "[Screens][Search]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_Search_searching": "Pesquisando",
+  "@_Search_searching": {
+    "description": "[Screens][Search]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_Search_unknownMediaType": "Tipo de mídia desconhecido",
+  "@_Search_unknownMediaType": {
+    "description": "[Screens][Search]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MediaButtons_favorite": "Favorito",
+  "@_MediaButtons_favorite": {
+    "description": "[MediaButtons]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MediaButtons_favoriteTooltip": "{value,select, true{Remover dos favoritos}false{Adicionar aos favoritos}}",
+  "@_MediaButtons_favoriteTooltip": {
+    "description": "[MediaButtons]",
+    "type": "text",
+    "placeholders": {
+      "value": {}
+    }
+  },
+  "_MediaButtons_watchList": "Assistir depois",
+  "@_MediaButtons_watchList": {
+    "description": "[MediaButtons]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MediaButtons_watchListTooltip": "{value,select, true{Remover da lista}false{Adicionar a lista}}",
+  "@_MediaButtons_watchListTooltip": {
+    "description": "[MediaButtons]",
+    "type": "text",
+    "placeholders": {
+      "value": {}
+    }
+  },
+  "_MediaButtons_rate": "Avaliar",
+  "@_MediaButtons_rate": {
+    "description": "[MediaButtons]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MediaButtons_rateTooltip": "{value,select, true{Editar ou remover sua avaliação}false{Avaliar}}",
+  "@_MediaButtons_rateTooltip": {
+    "description": "[MediaButtons]",
+    "type": "text",
+    "placeholders": {
+      "value": {}
+    }
+  },
+  "_MediaButtons_playlist": "Minhas listas",
+  "@_MediaButtons_playlist": {
+    "description": "[MediaButtons]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MediaButtons_playlistTooltip": "Adicionar ou remover das minhas listas",
+  "@_MediaButtons_playlistTooltip": {
+    "description": "[MediaButtons]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TmdbObjects_sortOrder": "{order,select, asc{{invert,select, true{descendente}false{ascendente}}}desc{{invert,select, true{ascendente}false{descendente}}}}",
+  "@_TmdbObjects_sortOrder": {
+    "description": "[TmdbObjects]",
+    "type": "text",
+    "placeholders": {
+      "order": {},
+      "invert": {}
+    }
+  },
+  "_TmdbObjects__sortOrderSwitch": "Mudar para ordem \"{orderText}\"",
+  "@_TmdbObjects__sortOrderSwitch": {
+    "description": "[TmdbObjects]",
+    "type": "text",
+    "placeholders": {
+      "orderText": {}
+    }
+  },
+  "_SnackBarMessages_favoriteChanged": "{value,select, true{Adicionado aos favoritos}false{Removido dos favoritos}}",
+  "@_SnackBarMessages_favoriteChanged": {
+    "description": "[SnackBarMessages]",
+    "type": "text",
+    "placeholders": {
+      "value": {}
+    }
+  },
+  "_SnackBarMessages_watchListChanged": "{value,select, true{Adicionado em assistir depois}false{Removido de assistir depois}}",
+  "@_SnackBarMessages_watchListChanged": {
+    "description": "[SnackBarMessages]",
+    "type": "text",
+    "placeholders": {
+      "value": {}
+    }
+  },
+  "_SnackBarMessages_rateChanged": "{value,select, true{Item avaliado}false{Avaliação do item removida}}",
+  "@_SnackBarMessages_rateChanged": {
+    "description": "[SnackBarMessages]",
+    "type": "text",
+    "placeholders": {
+      "value": {}
+    }
+  },
+  "_SnackBarMessages__listsChanged": "{added,select, true{{howMany,plural, =0{}=1{Adicionado a 1 lista. }other{Adicionado a {howMany} listas. }}}false{{howMany,plural, =0{}=1{Removido de 1 lista. }other{Removido de {howMany} listas. }}}}",
+  "@_SnackBarMessages__listsChanged": {
+    "description": "[SnackBarMessages]",
+    "type": "text",
+    "placeholders": {
+      "added": {},
+      "howMany": {}
+    }
+  }
+}

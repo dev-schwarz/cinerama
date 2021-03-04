@@ -14,9 +14,9 @@ class DiscoverMoviesContents extends StatelessWidget {
     return Observer(
       builder: (_) {
         if (!store.hasResults) {
-          return const BigLoadingIndicator(
+          return BigLoadingIndicator(
             iconData: Icons.new_releases,
-            title: 'Discovering Movies',
+            title: context.i18n.screens.discoverMoviesScreen.pageTitle,
             message: 'Loading...',
           );
         }

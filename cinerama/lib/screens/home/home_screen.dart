@@ -25,23 +25,22 @@ class _HomeScreenState extends ModularState<HomeScreen, HomeScreenController> {
     _pages = [
       _BottomNavBarItemData(
         icon: Icons.trending_up,
-        label: 'Trending',
+        label: context.i18n.screens.titles.trending,
         child: TrendingScreen(TrendingStore()),
       ),
       _BottomNavBarItemData(
         icon: Icons.new_releases,
-        label: 'Discover',
+        label: context.i18n.screens.titles.discover,
         child: const DiscoverMoviesScreen(),
-        // child: _TempScreen('Discover'),
       ),
       _BottomNavBarItemData(
         icon: Icons.assignment,
-        label: 'Assignments',
-        child: _TempScreen('Assignments'),
+        label: context.i18n.screens.titles.assignments,
+        child: _TempScreen(context.i18n.screens.titles.assignments),
       ),
       _BottomNavBarItemData(
         icon: Icons.video_library,
-        label: 'Library',
+        label: context.i18n.screens.titles.library,
         child: const LibraryScreen(),
       ),
     ];
