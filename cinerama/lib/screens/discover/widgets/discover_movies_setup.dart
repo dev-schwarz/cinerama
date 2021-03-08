@@ -49,8 +49,8 @@ class _DiscoverMoviesSetupState extends State<DiscoverMoviesSetup> {
         children: [
           _DiscoverMoviesSortSelector(_filterStore),
           DiscoverSetupFieldTitle(
-            title: context.i18n.screens.discoverMoviesScreen.year,
-            subtitle: context.i18n.screens.discoverMoviesScreen.ofRelease,
+            title: context.i18n.screens.discoverMovies.year,
+            subtitle: context.i18n.screens.discoverMovies.ofRelease,
           ),
           _yearTextField(),
         ],
@@ -65,11 +65,11 @@ class _DiscoverMoviesSetupState extends State<DiscoverMoviesSetup> {
           controller: _yearController,
           decoration: InputDecoration(
             border: const OutlineInputBorder(),
-            hintText: context.i18n.screens.discoverMoviesScreen.year,
+            hintText: context.i18n.screens.discoverMovies.year,
             isDense: true,
             errorText: _filterStore.yearValid
                 ? null
-                : context.i18n.screens.discoverMoviesScreen.yearOfReleaseError,
+                : context.i18n.screens.discoverMovies.yearOfReleaseError,
             suffixIcon: IconButton(
               icon: const Icon(Icons.clear),
               onPressed: () {

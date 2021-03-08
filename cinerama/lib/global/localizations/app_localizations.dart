@@ -6,9 +6,16 @@ import 'initialize_i18n/messages_all.dart';
 
 part 'general.dart';
 part 'media_buttons.dart';
-part 'screens.dart';
-part 'tmdb_objects.dart';
+part 'screens/discover_screen.dart';
+part 'screens/library_screen.dart';
+part 'screens/movie_details_screen.dart';
+part 'screens/person_details_screen.dart';
+part 'screens/screens.dart';
+part 'screens/search_screen.dart';
+part 'screens/settings_screen.dart';
+part 'screens/tv_details_screen.dart';
 part 'snack_bar_messages.dart';
+part 'tmdb_objects.dart';
 
 class AppLocalizations {
   static Future<AppLocalizations> load(Locale locale) {

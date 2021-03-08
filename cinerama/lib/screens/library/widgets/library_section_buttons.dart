@@ -33,7 +33,7 @@ class LibrarySectionButtons extends StatelessWidget {
         return _LibrarySectionButton(
           iconData: Icons.favorite,
           iconColor: iconColor,
-          label: 'Favorite Movies',
+          label: context.i18n.screens.library.favoriteMovies,
           hintText: favoritesStore.hasFavoriteMovies
               ? favoritesStore.favoriteMovies.totalResults.toString()
               : '',
@@ -50,7 +50,7 @@ class LibrarySectionButtons extends StatelessWidget {
         return _LibrarySectionButton(
           iconData: Icons.favorite,
           iconColor: iconColor,
-          label: 'Favorite Tvs',
+          label: context.i18n.screens.library.favoriteTvs,
           hintText: favoritesStore.hasFavoriteTvs
               ? favoritesStore.favoriteTvs.totalResults.toString()
               : '',
@@ -67,7 +67,7 @@ class LibrarySectionButtons extends StatelessWidget {
         return _LibrarySectionButton(
           iconData: Icons.watch_later,
           iconColor: iconColor,
-          label: 'Movies to watch',
+          label: context.i18n.screens.library.watchListMovies,
           hintText: watchListsStore.hasWatchListMovies
               ? watchListsStore.watchListMovies.totalResults.toString()
               : '',
@@ -84,7 +84,7 @@ class LibrarySectionButtons extends StatelessWidget {
         return _LibrarySectionButton(
           iconData: Icons.watch_later,
           iconColor: iconColor,
-          label: 'Tvs to watch',
+          label: context.i18n.screens.library.watchListTvs,
           hintText: watchListsStore.hasWatchListTvs
               ? watchListsStore.watchListTvs.totalResults.toString()
               : '',

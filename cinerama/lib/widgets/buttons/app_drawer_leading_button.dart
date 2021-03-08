@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import '../../material.dart';
 
 class AppDrawerLeadingButton extends StatelessWidget {
   const AppDrawerLeadingButton({Key key}) : super(key: key);
@@ -7,7 +7,7 @@ class AppDrawerLeadingButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       icon: const Icon(Icons.menu),
-      tooltip: 'Open navigation menu',
+      // tooltip: context.i18n.general.appDrawerLeadingButtonTooltip,
       onPressed: () {
         if (Scaffold.hasDrawer(context)) {
           Scaffold.of(context).openDrawer();

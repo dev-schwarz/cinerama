@@ -1,4 +1,4 @@
-class AppUtils {
+abstract class AppUtils {
   const AppUtils._();
 
   /// Returns only the first letters of the [name].

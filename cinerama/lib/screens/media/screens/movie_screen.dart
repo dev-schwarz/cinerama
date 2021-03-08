@@ -86,8 +86,7 @@ class _MovieScreenState extends State<MovieScreen>
         //   ),
         // );
       },
-      // TODO: Add localizations here!
-      child: const Text('Show recommendations based on this title'),
+      child: Text(context.i18n.screens.movieDetails.btnRecommendations),
     );
   }
 
@@ -131,65 +130,65 @@ class _MovieScreenState extends State<MovieScreen>
       divider(8.0),
     ]);
 
-    // recommendations
+    // [[ recommendations ]]
     items.add(
       _recommendationsButton(),
     );
 
-    // overview
+    // [[ overview ]]
     items.add(
       _overview(),
     );
 
-    // genres
+    // [[ genres ]]
     if (mediaDetails?.genres?.isNotEmpty ?? false) {
       items.addAll([
         spacer(),
         infoWidget(
-          'Genres:',
+          '${context.i18n.screens.movieDetails.genres}:',
           mediaDetails.genres.map((genre) => genre.name),
           separator: ', ',
         ),
       ]);
     }
 
-    // status
+    // [[ status ]]
     items.addAll([
       spacer(13.0),
-      info('Status:', mediaDetails.mediaStatus.toString()),
+      info('${context.i18n.screens.movieDetails.status}:', mediaDetails.mediaStatus.toString()),
     ]);
 
-    // budget
+    // [[ budget ]]
     if (mediaDetails?.budget != 0 ?? false) {
       items.addAll([
         spacer(13.0),
         // info('Budget:', mediaDetails.budget.toString()),
-        info('Budget:', formatCurrency(mediaDetails.budget)),
+        info('${context.i18n.screens.movieDetails.budget}:', formatCurrency(mediaDetails.budget)),
       ]);
     }
 
-    // revenue
+    // [[ revenue ]]
     if (mediaDetails?.revenue != 0 ?? false) {
       items.addAll([
         spacer(13.0),
-        info('Revenue:', formatCurrency(mediaDetails.revenue)),
+        info('${context.i18n.screens.movieDetails.revenue}:', formatCurrency(mediaDetails.revenue)),
       ]);
     }
 
-    // cast
+    // [[ cast ]]
     if (mediaDetails.credits != null && mediaDetails.credits.cast.isNotEmpty) {
       items.addAll([
         divider(),
-        sectionTitle('Cast'),
+        sectionTitle(context.i18n.screens.movieDetails.cast),
         _cast(),
       ]);
     }
 
-    // crew
+    // [[ crew ]]
     if (mediaDetails.credits != null && mediaDetails.credits.crew.isNotEmpty) {
       items.addAll([
         divider(),
-        sectionTitle('Crew'),
+        sectionTitle(context.i18n.screens.movieDetails.crew),
         _crew(),
       ]);
     }

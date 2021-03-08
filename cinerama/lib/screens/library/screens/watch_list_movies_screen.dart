@@ -18,7 +18,7 @@ class WatchListMoviesScreen extends StatelessWidget {
         title: Observer(
           builder: (_) {
             return LibraryAppBarTitle(
-              title: 'Movies to watch',
+              title: context.i18n.screens.library.watchListMovies,
               listSize: store.hasWatchListMovies ? store.watchListMovies.totalResults : 0,
             );
           },

@@ -59,4 +59,10 @@ class _General {
         name: '_General_clear',
         desc: '[General]',
       );
+
+  String get appDrawerLeadingButtonTooltip => Intl.message(
+        'Open navigation menu',
+        name: '_General_appDrawerLeadingButtonTooltip',
+        desc: '[General]',
+      );
 }

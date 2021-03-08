@@ -55,193 +55,9 @@
     "type": "text",
     "placeholders": {}
   },
-  "_ScreensTitles_trending": "Em Destaque",
-  "@_ScreensTitles_trending": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_discover": "Descubra",
-  "@_ScreensTitles_discover": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_assignments": "Inscrições",
-  "@_ScreensTitles_assignments": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_library": "Biblioteca",
-  "@_ScreensTitles_library": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_settings": "Configurações",
-  "@_ScreensTitles_settings": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_settingsLanguages": "Selecione um idioma",
-  "@_ScreensTitles_settingsLanguages": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_settingsRegions": "Selecione uma região",
-  "@_ScreensTitles_settingsRegions": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_about": "Sobre",
-  "@_ScreensTitles_about": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_includeAdult": "Incluir adulto",
-  "@_SettingsScreen_includeAdult": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_imageHighQuality": "Imagem de alta qualidade",
-  "@_SettingsScreen_imageHighQuality": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_viewMode": "Modo de exibição",
-  "@_SettingsScreen_viewMode": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_list": "Lista",
-  "@_SettingsScreen_list": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_grid": "Grade",
-  "@_SettingsScreen_grid": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_language": "Idioma",
-  "@_SettingsScreen_language": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_region": "Região",
-  "@_SettingsScreen_region": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_pageTitle": "Descobrir Filmes",
-  "@_DiscoverMoviesScreen_pageTitle": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_setupTitle": "Descobrir Filmes - Filtros",
-  "@_DiscoverMoviesScreen_setupTitle": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_setupButton": "Configurar Filtros",
-  "@_DiscoverMoviesScreen_setupButton": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_closeButton": "Fechar",
-  "@_DiscoverMoviesScreen_closeButton": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_applyButton": "Aplicar",
-  "@_DiscoverMoviesScreen_applyButton": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen__sortText": "{sortText,select, popularity{Popularidade}original_title{Título}release_date{Lançamento}vote_average{Avaliação}vote_count{Mais votados}revenue{Renda}}",
-  "@_DiscoverMoviesScreen__sortText": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {
-      "sortText": {}
-    }
-  },
-  "_DiscoverMoviesScreen_orderText": "{order,select, asc{Ordem ascending}desc{Ordem descendente}}",
-  "@_DiscoverMoviesScreen_orderText": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {
-      "order": {}
-    }
-  },
-  "_DiscoverMoviesScreen_year": "Ano",
-  "@_DiscoverMoviesScreen_year": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_ofRelease": "de lançamento",
-  "@_DiscoverMoviesScreen_ofRelease": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_yearOfReleaseHint": "Exemplo: 2004",
-  "@_DiscoverMoviesScreen_yearOfReleaseHint": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_yearOfReleaseError": "Ano inválido",
-  "@_DiscoverMoviesScreen_yearOfReleaseError": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_title": "Pesquisar",
-  "@_Search_title": {
-    "description": "[Screens][Search]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_noResults": "Nenhum resultado encontrado",
-  "@_Search_noResults": {
-    "description": "[Screens][Search]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_btnClear": "Limpar",
-  "@_Search_btnClear": {
-    "description": "[Screens][Search]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_searching": "Pesquisando",
-  "@_Search_searching": {
-    "description": "[Screens][Search]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_unknownMediaType": "Tipo de mídia desconhecido",
-  "@_Search_unknownMediaType": {
-    "description": "[Screens][Search]",
+  "_General_appDrawerLeadingButtonTooltip": "Exibir menu",
+  "@_General_appDrawerLeadingButtonTooltip": {
+    "description": "[General]",
     "type": "text",
     "placeholders": {}
   },
@@ -348,5 +164,351 @@
       "added": {},
       "howMany": {}
     }
+  },
+  "_ScreensTitles_trending": "Em Destaque",
+  "@_ScreensTitles_trending": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_discover": "Descubra",
+  "@_ScreensTitles_discover": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_assignments": "Inscrições",
+  "@_ScreensTitles_assignments": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_library": "Biblioteca",
+  "@_ScreensTitles_library": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settings": "Configurações",
+  "@_ScreensTitles_settings": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settingsLanguages": "Selecione um idioma",
+  "@_ScreensTitles_settingsLanguages": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settingsRegions": "Selecione uma região",
+  "@_ScreensTitles_settingsRegions": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_about": "Sobre",
+  "@_ScreensTitles_about": {
+    "description": "[Screens]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_pageTitle": "Descobrir Filmes",
+  "@_DiscoverMoviesScreen_pageTitle": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_setupTitle": "Descobrir Filmes - Filtros",
+  "@_DiscoverMoviesScreen_setupTitle": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_setupButton": "Configurar Filtros",
+  "@_DiscoverMoviesScreen_setupButton": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_closeButton": "Fechar",
+  "@_DiscoverMoviesScreen_closeButton": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_applyButton": "Aplicar",
+  "@_DiscoverMoviesScreen_applyButton": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen__sortText": "{sortText,select, popularity{Popularidade}original_title{Título}release_date{Lançamento}vote_average{Avaliação}vote_count{Mais votados}revenue{Renda}}",
+  "@_DiscoverMoviesScreen__sortText": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {
+      "sortText": {}
+    }
+  },
+  "_DiscoverMoviesScreen_orderText": "{order,select, asc{Ordem ascending}desc{Ordem descendente}}",
+  "@_DiscoverMoviesScreen_orderText": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {
+      "order": {}
+    }
+  },
+  "_DiscoverMoviesScreen_year": "Ano",
+  "@_DiscoverMoviesScreen_year": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_ofRelease": "de lançamento",
+  "@_DiscoverMoviesScreen_ofRelease": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_yearOfReleaseHint": "Exemplo: 2004",
+  "@_DiscoverMoviesScreen_yearOfReleaseHint": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_yearOfReleaseError": "Ano inválido",
+  "@_DiscoverMoviesScreen_yearOfReleaseError": {
+    "description": "[Screens][DiscoverMovies]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_favoriteMovies": "Filmes Favoritos",
+  "@_LibraryScreen_favoriteMovies": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_favoriteTvs": "Tvs Favoritos",
+  "@_LibraryScreen_favoriteTvs": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_watchListMovies": "Filmes para Assistir",
+  "@_LibraryScreen_watchListMovies": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_watchListTvs": "Tvs para Assistir",
+  "@_LibraryScreen_watchListTvs": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_myLists": "Minhas Listas",
+  "@_LibraryScreen_myLists": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_createdAt": "Criada em",
+  "@_LibraryScreen_createdAt": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_updatedAt": "Atualizada em",
+  "@_LibraryScreen_updatedAt": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_title": "Pesquisar",
+  "@_SearchScreen_title": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_noResults": "Nenhum resultado encontrado",
+  "@_SearchScreen_noResults": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_btnClear": "Limpar",
+  "@_SearchScreen_btnClear": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_searching": "Pesquisando",
+  "@_SearchScreen_searching": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_unknownMediaType": "Tipo de mídia desconhecido",
+  "@_SearchScreen_unknownMediaType": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_includeAdult": "Incluir adulto",
+  "@_SettingsScreen_includeAdult": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_imageHighQuality": "Imagem de alta qualidade",
+  "@_SettingsScreen_imageHighQuality": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_viewMode": "Modo de exibição",
+  "@_SettingsScreen_viewMode": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_list": "Lista",
+  "@_SettingsScreen_list": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_grid": "Grade",
+  "@_SettingsScreen_grid": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_language": "Idioma",
+  "@_SettingsScreen_language": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_region": "Região",
+  "@_SettingsScreen_region": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_btnRecommendations": "Mostrar recomendações baseado neste título",
+  "@_MovieDetailsScreen_btnRecommendations": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_genres": "Gêneros",
+  "@_MovieDetailsScreen_genres": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_status": "Status",
+  "@_MovieDetailsScreen_status": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_budget": "Orçamento",
+  "@_MovieDetailsScreen_budget": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_revenue": "Renda",
+  "@_MovieDetailsScreen_revenue": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_cast": "Elenco",
+  "@_MovieDetailsScreen_cast": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_crew": "Equipe",
+  "@_MovieDetailsScreen_crew": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_PersonDetailsScreen_biography": "Biografia",
+  "@_PersonDetailsScreen_biography": {
+    "description": "[Screens][PersonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_PersonDetailsScreen_placeOfBirth": "Local de nascimento",
+  "@_PersonDetailsScreen_placeOfBirth": {
+    "description": "[Screens][PersonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_PersonDetailsScreen_notAvailable": "Não disponível",
+  "@_PersonDetailsScreen_notAvailable": {
+    "description": "[Screens][PersonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_PersonDetailsScreen_knownFor": "Conhecido por",
+  "@_PersonDetailsScreen_knownFor": {
+    "description": "[Screens][PersonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_seasons": "Temporadas",
+  "@_TvDetailsScreen_seasons": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_episodes": "Episódios",
+  "@_TvDetailsScreen_episodes": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_btnRecommendations": "Mostrar recomendações baseado neste título",
+  "@_TvDetailsScreen_btnRecommendations": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_status": "Status",
+  "@_TvDetailsScreen_status": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_inProduction": "Em Produção",
+  "@_TvDetailsScreen_inProduction": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_createdBy": "Criado Por",
+  "@_TvDetailsScreen_createdBy": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_cast": "Elenco",
+  "@_TvDetailsScreen_cast": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_crew": "Equipe",
+  "@_TvDetailsScreen_crew": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
   }
 }

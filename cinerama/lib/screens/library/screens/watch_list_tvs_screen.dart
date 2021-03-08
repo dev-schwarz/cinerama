@@ -19,7 +19,7 @@ class WatchListTvsScreen extends StatelessWidget {
         title: Observer(
           builder: (_) {
             return LibraryAppBarTitle(
-              title: 'Tvs to watch',
+              title: context.i18n.screens.library.watchListTvs,
               listSize: store.hasWatchListTvs ? store.watchListTvs.totalResults : 0,
             );
           },

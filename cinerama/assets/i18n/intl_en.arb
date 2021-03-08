@@ -38,7 +38,7 @@
     }
   },
   "_General_loading": "Loading",
-  "@loading": {
+  "@_General_loading": {
     "description": "[General]",
     "type": "text",
     "placeholders": {}
@@ -55,193 +55,9 @@
     "type": "text",
     "placeholders": {}
   },
-  "_ScreensTitles_trending": "Trending",
-  "@_ScreensTitles_trending": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_discover": "Discover",
-  "@_ScreensTitles_discover": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_assignments": "Assignments",
-  "@_ScreensTitles_assignments": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_library": "Library",
-  "@_ScreensTitles_library": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_settings": "Settings",
-  "@_ScreensTitles_settings": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_settingsLanguages": "Select a Language",
-  "@_ScreensTitles_settingsLanguages": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_settingsRegions": "Select a Region",
-  "@_ScreensTitles_settingsRegions": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_ScreensTitles_about": "About",
-  "@_ScreensTitles_about": {
-    "description": "[Screens]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_includeAdult": "Include adult",
-  "@_SettingsScreen_includeAdult": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_imageHighQuality": "Image high quality",
-  "@_SettingsScreen_imageHighQuality": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_viewMode": "View mode",
-  "@_SettingsScreen_viewMode": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_list": "List",
-  "@_SettingsScreen_list": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_grid": "Grid",
-  "@_SettingsScreen_grid": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_language": "Language",
-  "@_SettingsScreen_language": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_SettingsScreen_region": "Region",
-  "@_SettingsScreen_region": {
-    "description": "[Screens][SettingsScreen]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_pageTitle": "Discover Movies",
-  "@_DiscoverMoviesScreen_pageTitle": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_setupTitle": "Discover Movies Setup",
-  "@_DiscoverMoviesScreen_setupTitle": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_setupButton": "Setup Filters",
-  "@_DiscoverMoviesScreen_setupButton": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_closeButton": "Close",
-  "@_DiscoverMoviesScreen_closeButton": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_applyButton": "Apply",
-  "@_DiscoverMoviesScreen_applyButton": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen__sortText": "{sortText,select, popularity{Popularity}original_title{Original title}release_date{Release date}vote_average{Vote average}vote_count{Vote count}revenue{Revenue}}",
-  "@_DiscoverMoviesScreen__sortText": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {
-      "sortText": {}
-    }
-  },
-  "_DiscoverMoviesScreen_orderText": "{order,select, asc{Ascending order}desc{Descending order}}",
-  "@_DiscoverMoviesScreen_orderText": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {
-      "order": {}
-    }
-  },
-  "_DiscoverMoviesScreen_year": "Year",
-  "@_DiscoverMoviesScreen_year": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_ofRelease": "of release",
-  "@_DiscoverMoviesScreen_ofRelease": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_yearOfReleaseHint": "Sample: 2004",
-  "@_DiscoverMoviesScreen_yearOfReleaseHint": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_DiscoverMoviesScreen_yearOfReleaseError": "Invalid year",
-  "@_DiscoverMoviesScreen_yearOfReleaseError": {
-    "description": "[Screens][DiscoverMovies]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_title": "Search",
-  "@_Search_title": {
-    "description": "[Screens][Search]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_noResults": "No results found",
-  "@_Search_noResults": {
-    "description": "[Screens][Search]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_btnClear": "Clear",
-  "@_Search_btnClear": {
-    "description": "[Screens][Search]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_searching": "Searching",
-  "@_Search_searching": {
-    "description": "[Screens][Search]",
-    "type": "text",
-    "placeholders": {}
-  },
-  "_Search_unknownMediaType": "Unknown media type",
-  "@_Search_unknownMediaType": {
-    "description": "[Screens][Search]",
+  "_General_appDrawerLeadingButtonTooltip": "Open navigation menu",
+  "@_General_appDrawerLeadingButtonTooltip": {
+    "description": "[General]",
     "type": "text",
     "placeholders": {}
   },
@@ -348,5 +164,351 @@
       "added": {},
       "howMany": {}
     }
+  },
+  "_ScreensTitles_trending": "Trending",
+  "@_ScreensTitles_trending": {
+    "description": "[Screens][ScreensTitles]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_discover": "Discover",
+  "@_ScreensTitles_discover": {
+    "description": "[Screens][ScreensTitles]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_assignments": "Assignments",
+  "@_ScreensTitles_assignments": {
+    "description": "[Screens][ScreensTitles]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_library": "Library",
+  "@_ScreensTitles_library": {
+    "description": "[Screens][ScreensTitles]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settings": "Settings",
+  "@_ScreensTitles_settings": {
+    "description": "[Screens][ScreensTitles]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settingsLanguages": "Select a Language",
+  "@_ScreensTitles_settingsLanguages": {
+    "description": "[Screens][ScreensTitles]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_settingsRegions": "Select a Region",
+  "@_ScreensTitles_settingsRegions": {
+    "description": "[Screens][ScreensTitles]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_ScreensTitles_about": "About",
+  "@_ScreensTitles_about": {
+    "description": "[Screens][ScreensTitles]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_pageTitle": "Discover Movies",
+  "@_DiscoverMoviesScreen_pageTitle": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_setupTitle": "Discover Movies Setup",
+  "@_DiscoverMoviesScreen_setupTitle": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_setupButton": "Setup Filters",
+  "@_DiscoverMoviesScreen_setupButton": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_closeButton": "Close",
+  "@_DiscoverMoviesScreen_closeButton": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_applyButton": "Apply",
+  "@_DiscoverMoviesScreen_applyButton": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen__sortText": "{sortText,select, popularity{Popularity}original_title{Original title}release_date{Release date}vote_average{Vote average}vote_count{Vote count}revenue{Revenue}}",
+  "@_DiscoverMoviesScreen__sortText": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {
+      "sortText": {}
+    }
+  },
+  "_DiscoverMoviesScreen_orderText": "{order,select, asc{Ascending order}desc{Descending order}}",
+  "@_DiscoverMoviesScreen_orderText": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {
+      "order": {}
+    }
+  },
+  "_DiscoverMoviesScreen_year": "Year",
+  "@_DiscoverMoviesScreen_year": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_ofRelease": "of release",
+  "@_DiscoverMoviesScreen_ofRelease": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_yearOfReleaseHint": "Sample: 2004",
+  "@_DiscoverMoviesScreen_yearOfReleaseHint": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_DiscoverMoviesScreen_yearOfReleaseError": "Invalid year",
+  "@_DiscoverMoviesScreen_yearOfReleaseError": {
+    "description": "[Screens][DiscoverMoviesScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_favoriteMovies": "Favorite Movies",
+  "@_LibraryScreen_favoriteMovies": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_favoriteTvs": "Favorite Tvs",
+  "@_LibraryScreen_favoriteTvs": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_watchListMovies": "Movies to Watch",
+  "@_LibraryScreen_watchListMovies": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_watchListTvs": "Tvs to Watch",
+  "@_LibraryScreen_watchListTvs": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_myLists": "My Lists",
+  "@_LibraryScreen_myLists": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_createdAt": "Created at",
+  "@_LibraryScreen_createdAt": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_LibraryScreen_updatedAt": "Updated at",
+  "@_LibraryScreen_updatedAt": {
+    "description": "[Screens][LibraryScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_title": "Search",
+  "@_SearchScreen_title": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_noResults": "No results found",
+  "@_SearchScreen_noResults": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_btnClear": "Clear",
+  "@_SearchScreen_btnClear": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_searching": "Searching",
+  "@_SearchScreen_searching": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SearchScreen_unknownMediaType": "Unknown media type",
+  "@_SearchScreen_unknownMediaType": {
+    "description": "[Screens][SearchScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_includeAdult": "Include adult",
+  "@_SettingsScreen_includeAdult": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_imageHighQuality": "Image high quality",
+  "@_SettingsScreen_imageHighQuality": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_viewMode": "View mode",
+  "@_SettingsScreen_viewMode": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_list": "List",
+  "@_SettingsScreen_list": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_grid": "Grid",
+  "@_SettingsScreen_grid": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_language": "Language",
+  "@_SettingsScreen_language": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_SettingsScreen_region": "Region",
+  "@_SettingsScreen_region": {
+    "description": "[Screens][SettingsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_btnRecommendations": "Show recommendations based on this title",
+  "@_MovieDetailsScreen_btnRecommendations": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_genres": "Genres",
+  "@_MovieDetailsScreen_genres": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_status": "Status",
+  "@_MovieDetailsScreen_status": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_budget": "Budget",
+  "@_MovieDetailsScreen_budget": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_revenue": "Revenue",
+  "@_MovieDetailsScreen_revenue": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_cast": "Cast",
+  "@_MovieDetailsScreen_cast": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_MovieDetailsScreen_crew": "Crew",
+  "@_MovieDetailsScreen_crew": {
+    "description": "[Screens][MovieDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_PersonDetailsScreen_biography": "Biography",
+  "@_PersonDetailsScreen_biography": {
+    "description": "[Screens][PersonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_PersonDetailsScreen_placeOfBirth": "Place of birth",
+  "@_PersonDetailsScreen_placeOfBirth": {
+    "description": "[Screens][PersonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_PersonDetailsScreen_notAvailable": "Not available",
+  "@_PersonDetailsScreen_notAvailable": {
+    "description": "[Screens][PersonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_PersonDetailsScreen_knownFor": "Known for",
+  "@_PersonDetailsScreen_knownFor": {
+    "description": "[Screens][PersonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_seasons": "Seasons",
+  "@_TvDetailsScreen_seasons": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_episodes": "Episodes",
+  "@_TvDetailsScreen_episodes": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_btnRecommendations": "Show recommendations based on this title",
+  "@_TvDetailsScreen_btnRecommendations": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_status": "Status",
+  "@_TvDetailsScreen_status": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_inProduction": "In Production",
+  "@_TvDetailsScreen_inProduction": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_createdBy": "Created By",
+  "@_TvDetailsScreen_createdBy": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_cast": "Cast",
+  "@_TvDetailsScreen_cast": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvDetailsScreen_crew": "Crew",
+  "@_TvDetailsScreen_crew": {
+    "description": "[Screens][TvDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
   }
 }

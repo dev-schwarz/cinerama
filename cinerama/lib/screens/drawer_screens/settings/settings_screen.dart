@@ -31,12 +31,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     final List<_OptionItemData> optionsItems = [
       _OptionItemData(
-        title: context.i18n.screens.settingsScreen.language,
+        title: context.i18n.screens.settings.language,
         iconData: Icons.language,
         child: const _SettingsLanguagesScreen(),
       ),
       _OptionItemData(
-        title: context.i18n.screens.settingsScreen.region,
+        title: context.i18n.screens.settings.region,
         iconData: Icons.location_on,
         child: const _SettingsRegionsScreen(),
       ),
@@ -79,7 +79,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return <Widget>[
       ..._options,
       LabeledSwitch(
-        label: context.i18n.screens.settingsScreen.includeAdult,
+        label: context.i18n.screens.settings.includeAdult,
         value: _includeAdult,
         onChanged: (value) {
           setState(() {
@@ -90,7 +90,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         },
       ),
       LabeledSwitch(
-        label: context.i18n.screens.settingsScreen.imageHighQuality,
+        label: context.i18n.screens.settings.imageHighQuality,
         value: _imageHighQuality,
         onChanged: (value) {
           setState(() {
@@ -108,13 +108,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   Widget _resultsViewTypeWidget() {
     final List<String> values = [
-      context.i18n.screens.settingsScreen.list,
-      context.i18n.screens.settingsScreen.grid,
+      context.i18n.screens.settings.list,
+      context.i18n.screens.settings.grid,
     ];
 
     return LabeledDropdown<ResultsViewType>(
       value: _resultsViewType,
-      label: context.i18n.screens.settingsScreen.viewMode,
+      label: context.i18n.screens.settings.viewMode,
       items: <ResultsViewType>[ResultsViewType.list, ResultsViewType.grid].toList(),
       itemBuilder: (item) => values[item.index],
       onChanged: (value) {

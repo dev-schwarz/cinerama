@@ -18,7 +18,7 @@ class FavoriteMoviesScreen extends StatelessWidget {
         title: Observer(
           builder: (_) {
             return LibraryAppBarTitle(
-              title: 'Favorite Movies',
+              title: context.i18n.screens.library.favoriteMovies,
               listSize: store.hasFavoriteMovies ? store.favoriteMovies.totalResults : 0,
             );
           },

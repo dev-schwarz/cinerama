@@ -21,7 +21,7 @@ class LibrarySectionLists extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: Text(
-            'My Lists',
+            context.i18n.screens.library.myLists,
             style: context.theme.textTheme.subtitle1,
           ),
         ),
@@ -70,10 +70,15 @@ class _ListTile extends StatelessWidget with TmdbHelperMixin {
           style: context.appTheme.mediaTileTheme.titleTextStyle,
         ),
         const SizedBox(height: 8.0),
-        Text(
-          'Created at: ${formatDate(list.createdAt)}\n'
-          'Updated at: ${formatDate(list.updatedAt)}',
-          style: context.appTheme.mediaTileTheme.descriptionTextStyle,
+        _textRow(
+          context,
+          '${context.i18n.screens.library.createdAt}:',
+          '${formatDate(list.createdAt)}',
+        ),
+        _textRow(
+          context,
+          '${context.i18n.screens.library.updatedAt}:',
+          '${formatDate(list.updatedAt)}',
         ),
       ],
     );
@@ -100,6 +105,29 @@ class _ListTile extends StatelessWidget with TmdbHelperMixin {
           ),
         ),
       ),
+    );
+  }
+
+  Widget _textRow(BuildContext context, String label, String text) {
+    return Row(
+      children: [
+        Expanded(
+          flex: 4,
+          child: Text(
+            label,
+            textAlign: TextAlign.end,
+            style: context.appTheme.mediaTileTheme.descriptionTextStyle,
+          ),
+        ),
+        const SizedBox(width: 4.0),
+        Expanded(
+          flex: 5,
+          child: Text(
+            text,
+            style: context.appTheme.mediaTileTheme.descriptionTextStyle,
+          ),
+        ),
+      ],
     );
   }
 }

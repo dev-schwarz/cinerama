@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:tmdb_repository/tmdb_repository.dart';
 
 mixin TmdbHelperMixin {
@@ -19,9 +20,15 @@ mixin TmdbHelperMixin {
     return '${value[0].toUpperCase()}${value.substring(1)}';
   }
 
-  String formatCurrency(int value) {}
+  String formatCurrency(num value) {
+    final formatter = NumberFormat.currency(locale: Intl.getCurrentLocale(), symbol: '\$');
+    return formatter.format(value);
+  }
 
-  String formatDate(DateTime dt) {}
+  String formatDate(DateTime dt) {
+    final String pattern = DateFormat.yMd(Intl.getCurrentLocale()).pattern;
+    return DateFormat(pattern).format(dt);
+  }
 
   int calculateAge(DateTime birthDate) {
     if (birthDate == null) {

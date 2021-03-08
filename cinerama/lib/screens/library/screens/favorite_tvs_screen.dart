@@ -19,7 +19,7 @@ class FavoriteTvsScreen extends StatelessWidget {
         title: Observer(
           builder: (_) {
             return LibraryAppBarTitle(
-              title: 'Favorite Tvs',
+              title: context.i18n.screens.library.favoriteTvs,
               listSize: store.hasFavoriteTvs ? store.favoriteTvs.totalResults : 0,
             );
           },

@@ -15,6 +15,8 @@ import '../screens/library/screens/watch_list_tvs_screen.dart';
 import '../screens/login/login_screen.dart';
 import '../screens/login/tmdb_access/tmdb_access_module.dart';
 import '../screens/media/screens/movie_screen.dart';
+import '../screens/media/screens/person_screen.dart';
+import '../screens/media/screens/tv_screen.dart';
 import '../screens/search/search_screen.dart';
 import '../services/prefs_service.dart';
 import '../services/tmdb_service.dart';
@@ -72,8 +74,14 @@ class AppModule extends MainModule {
           AppRoutes.movieDetails,
           child: (_, args) => MovieScreen(MovieStore(id: args.data)),
         ),
-        ModularRouter(AppRoutes.personDetails, child: (_, __) => null),
-        ModularRouter(AppRoutes.tvDetails, child: (_, __) => null),
+        ModularRouter(
+          AppRoutes.personDetails,
+          child: (_, args) => PersonScreen(PersonStore(id: args.data)),
+        ),
+        ModularRouter(
+          AppRoutes.tvDetails,
+          child: (_, args) => TvScreen(TvStore(id: args.data)),
+        ),
         ModularRouter(AppRoutes.tvSeasonDetails, child: (_, __) => null),
         ModularRouter(AppRoutes.tvEpisodeDetails, child: (_, __) => null),
       ];

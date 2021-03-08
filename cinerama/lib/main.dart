@@ -6,7 +6,9 @@ import 'services/prefs_service.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  // initializeDateFormatting().whenComplete(() {
   PrefsService.init().whenComplete(() {
     runApp(ModularApp(module: AppModule()));
   });
+  // });
 }
