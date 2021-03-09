@@ -128,6 +128,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "_TvDetailsScreen_inProduction" : MessageLookupByLibrary.simpleMessage("In Production"),
     "_TvDetailsScreen_seasons" : MessageLookupByLibrary.simpleMessage("Seasons"),
     "_TvDetailsScreen_status" : MessageLookupByLibrary.simpleMessage("Status"),
+    "_TvEpisodeDetailsScreen_episode" : MessageLookupByLibrary.simpleMessage("Episode"),
+    "_TvEpisodeDetailsScreen_guestStars" : MessageLookupByLibrary.simpleMessage("Guest Stars"),
+    "_TvEpisodeDetailsScreen_season" : MessageLookupByLibrary.simpleMessage("Season"),
+    "_TvSeasonDetailsScreen_episodes" : MessageLookupByLibrary.simpleMessage("episodes"),
+    "_TvSeasonDetailsScreen_season" : MessageLookupByLibrary.simpleMessage("Season"),
     "appTitle" : MessageLookupByLibrary.simpleMessage("Cinerama")
   };
 }

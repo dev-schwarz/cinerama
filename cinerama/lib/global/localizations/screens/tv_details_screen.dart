@@ -51,3 +51,41 @@ class _TvDetailsScreen {
         desc: '[Screens][TvDetailsScreen]',
       );
 }
+
+class _TvSeasonDetailsScreen {
+  const _TvSeasonDetailsScreen();
+
+  String get episodes => Intl.message(
+        'episodes',
+        name: '_TvSeasonDetailsScreen_episodes',
+        desc: '[Screens][TvSeasonDetailsScreen]',
+      );
+
+  String get season => Intl.message(
+        'Season',
+        name: '_TvSeasonDetailsScreen_season',
+        desc: '[Screens][TvSeasonDetailsScreen]',
+      );
+}
+
+class _TvEpisodeDetailsScreen {
+  const _TvEpisodeDetailsScreen();
+
+  String get guestStars => Intl.message(
+        'Guest Stars',
+        name: '_TvEpisodeDetailsScreen_guestStars',
+        desc: '[Screens][TvEpisodeDetailsScreen]',
+      );
+
+  String get season => Intl.message(
+        'Season',
+        name: '_TvEpisodeDetailsScreen_season',
+        desc: '[Screens][TvEpisodeDetailsScreen]',
+      );
+
+  String get episode => Intl.message(
+        'Episode',
+        name: '_TvEpisodeDetailsScreen_episode',
+        desc: '[Screens][TvEpisodeDetailsScreen]',
+      );
+}

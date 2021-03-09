@@ -1,3 +1,5 @@
+export 'app_screens_arguments.dart';
+
 class AppRoutes {
   const AppRoutes._();
 

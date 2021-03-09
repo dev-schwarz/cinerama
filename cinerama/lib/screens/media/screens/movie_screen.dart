@@ -1,6 +1,8 @@
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:tmdb_repository/tmdb_repository.dart';
 
 import '../../../global/app_constants.dart';
+import '../../../global/app_routes.dart';
 import '../../../global/app_utils.dart';
 import '../../../global/tmdb_helper_mixin.dart';
 import '../../../material.dart';
@@ -73,18 +75,10 @@ class _MovieScreenState extends State<MovieScreen>
     return FlatButton(
       textColor: Colors.blue,
       onPressed: () {
-        // Navigator.of(context).pushNamed(
-        //   AppRoutes.MOVIE_RECOMMENDATIONS,
-        //   arguments: RecommendationsScreenArguments(resumedMedia: resumedMedia),
-        // );
-
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (_) => MovieRecommendationsScreen(
-        //       mediaDetails,
-        //     ),
-        //   ),
-        // );
+        Modular.to.pushNamed(
+          AppRoutes.movieRecommendations,
+          arguments: RecommendationsScreenArgs(resumedMedia: resumedMedia),
+        );
       },
       child: Text(context.i18n.screens.movieDetails.btnRecommendations),
     );

@@ -18,6 +18,10 @@ class _Screens {
   _PersonDetailsScreen get personDetails => const _PersonDetailsScreen();
 
   _TvDetailsScreen get tvDetails => const _TvDetailsScreen();
+
+  _TvSeasonDetailsScreen get tvSeasonDetails => const _TvSeasonDetailsScreen();
+
+  _TvEpisodeDetailsScreen get tvEpisodeDetails => const _TvEpisodeDetailsScreen();
 }
 
 class _ScreensTitles {

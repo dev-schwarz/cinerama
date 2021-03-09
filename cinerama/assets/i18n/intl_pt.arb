@@ -510,5 +510,35 @@
     "description": "[Screens][TvDetailsScreen]",
     "type": "text",
     "placeholders": {}
+  },
+  "_TvSeasonDetailsScreen_episodes": "episódios",
+  "@_TvSeasonDetailsScreen_episodes": {
+    "description": "[Screens][TvSeasonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvSeasonDetailsScreen_season": "Temporada",
+  "@_TvSeasonDetailsScreen_season": {
+    "description": "[Screens][TvSeasonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvEpisodeDetailsScreen_guestStars": "Co-estrelando",
+  "@_TvEpisodeDetailsScreen_guestStars": {
+    "description": "[Screens][TvEpisodeDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvEpisodeDetailsScreen_season": "Temporada",
+  "@_TvEpisodeDetailsScreen_season": {
+    "description": "[Screens][TvEpisodeDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvEpisodeDetailsScreen_episode": "Episódio",
+  "@_TvEpisodeDetailsScreen_episode": {
+    "description": "[Screens][TvEpisodeDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
   }
 }

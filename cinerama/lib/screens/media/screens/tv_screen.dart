@@ -102,21 +102,11 @@ class _TvScreenState extends State<TvScreen> with MediaHelperMixin<Tv, TvScreen>
               onTap: () {
                 Modular.to.pushNamed(
                   AppRoutes.tvSeasonDetails,
-                  arguments: {
-                    'tv': mediaDetails,
-                    'season_number': season.seasonNumber,
-                  },
+                  arguments: TvSeasonScreenArgs(
+                    tv: mediaDetails,
+                    seasonNumber: season.seasonNumber,
+                  ),
                 );
-                // Navigator.of(context).pushNamed(
-                //   AppRoutes.TV_SEASON_DETAILS,
-                //   arguments: TvSeasonScreenArguments(
-                //     tvSeasonStore: TvSeasonStore(
-                //       tv: mediaDetails,
-                //       seasonNumber: season.seasonNumber,
-                //       dataStore: context.dataStore,
-                //     ),
-                //   ),
-                // );
               },
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -143,10 +133,12 @@ class _TvScreenState extends State<TvScreen> with MediaHelperMixin<Tv, TvScreen>
     return FlatButton(
       textColor: Colors.blue,
       onPressed: () {
-        // Navigator.of(context).pushNamed(
-        //   AppRoutes.TV_RECOMMENDATIONS,
-        //   arguments: RecommendationsScreenArguments(resumedMedia: resumedMedia),
-        // );
+        Modular.to.pushNamed(
+          AppRoutes.tvRecommendations,
+          arguments: RecommendationsScreenArgs(
+            resumedMedia: resumedMedia,
+          ),
+        );
       },
       child: Text(context.i18n.screens.tvDetails.btnRecommendations),
     );

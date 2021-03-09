@@ -16,13 +16,19 @@ import '../screens/login/login_screen.dart';
 import '../screens/login/tmdb_access/tmdb_access_module.dart';
 import '../screens/media/screens/movie_screen.dart';
 import '../screens/media/screens/person_screen.dart';
+import '../screens/media/screens/recommendations/movie_recommendations_screen.dart';
+import '../screens/media/screens/recommendations/tv_recommendations_screen.dart';
+import '../screens/media/screens/tv_episode_screen.dart';
 import '../screens/media/screens/tv_screen.dart';
+import '../screens/media/screens/tv_season_screen.dart';
 import '../screens/search/search_screen.dart';
 import '../services/prefs_service.dart';
 import '../services/tmdb_service.dart';
 import '../stores/controllers/home_screen_controller.dart';
 import '../stores/login/login_store.dart';
 import '../stores/media/media_store.dart';
+import '../stores/results/movie_recommendations_store.dart';
+import '../stores/results/tv_recommendations_store.dart';
 import '../stores/settings_store.dart';
 import '../stores/user_data/user_data_store.dart';
 import 'app_widget.dart';
@@ -82,8 +88,44 @@ class AppModule extends MainModule {
           AppRoutes.tvDetails,
           child: (_, args) => TvScreen(TvStore(id: args.data)),
         ),
-        ModularRouter(AppRoutes.tvSeasonDetails, child: (_, __) => null),
-        ModularRouter(AppRoutes.tvEpisodeDetails, child: (_, __) => null),
+        ModularRouter(
+          AppRoutes.tvSeasonDetails,
+          child: (_, args) {
+            final TvSeasonScreenArgs data = args.data;
+            return TvSeasonScreen(
+              TvSeasonStore(
+                tv: data.tv,
+                seasonNumber: data.seasonNumber,
+              ),
+            );
+          },
+        ),
+        ModularRouter(AppRoutes.tvEpisodeDetails, child: (_, args) {
+          final TvEpisodeScreenArgs data = args.data;
+          return TvEpisodeScreen(
+            TvEpisodeStore(
+              tv: data.tv,
+              tvSeason: data.tvSeason,
+              episodeNumber: data.episodeNumber,
+            ),
+          );
+        }),
+        ModularRouter(AppRoutes.movieRecommendations, child: (_, args) {
+          final RecommendationsScreenArgs data = args.data;
+          return MovieRecommendationsScreen(
+            MovieRecommendationsStore(
+              resumedMedia: data.resumedMedia,
+            ),
+          );
+        }),
+        ModularRouter(AppRoutes.tvRecommendations, child: (_, args) {
+          final RecommendationsScreenArgs data = args.data;
+          return TvRecommendationsScreen(
+            TvRecommendationsStore(
+              resumedMedia: data.resumedMedia,
+            ),
+          );
+        }),
       ];
 }
 

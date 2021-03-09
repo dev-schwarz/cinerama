@@ -510,5 +510,35 @@
     "description": "[Screens][TvDetailsScreen]",
     "type": "text",
     "placeholders": {}
+  },
+  "_TvSeasonDetailsScreen_episodes": "episodes",
+  "@_TvSeasonDetailsScreen_episodes": {
+    "description": "[Screens][TvSeasonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvSeasonDetailsScreen_season": "Season",
+  "@_TvSeasonDetailsScreen_season": {
+    "description": "[Screens][TvSeasonDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvEpisodeDetailsScreen_guestStars": "Guest Stars",
+  "@_TvEpisodeDetailsScreen_guestStars": {
+    "description": "[Screens][TvEpisodeDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvEpisodeDetailsScreen_season": "Season",
+  "@_TvEpisodeDetailsScreen_season": {
+    "description": "[Screens][TvEpisodeDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
+  },
+  "_TvEpisodeDetailsScreen_episode": "Episode",
+  "@_TvEpisodeDetailsScreen_episode": {
+    "description": "[Screens][TvEpisodeDetailsScreen]",
+    "type": "text",
+    "placeholders": {}
   }
 }
