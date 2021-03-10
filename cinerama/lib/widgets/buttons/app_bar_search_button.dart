@@ -1,6 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
-import '../../global/app_routes.dart';
+import '../../global/navigation/app_navigation.dart';
 import '../../material.dart';
 
 class AppBarSearchButton extends StatelessWidget {

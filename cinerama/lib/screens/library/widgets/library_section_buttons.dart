@@ -1,8 +1,8 @@
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-import '../../../global/app_routes.dart';
 import '../../../global/app_utils.dart';
+import '../../../global/navigation/app_navigation.dart';
 import '../../../material.dart';
 
 class LibrarySectionButtons extends StatelessWidget {

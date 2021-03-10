@@ -1,9 +1,9 @@
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-import '../global/app_routes.dart';
 import '../global/app_themes.dart';
 import '../global/localizations/app_localizations.dart';
+import '../global/navigation/app_navigation.dart';
 import '../material.dart';
 
 class AppWidget extends StatelessWidget {

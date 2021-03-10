@@ -4,7 +4,7 @@ import 'dart:developer';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-import '../../global/app_routes.dart';
+import '../../global/navigation/app_navigation.dart';
 import '../../material.dart';
 import '../../stores/login/login_store.dart';
 

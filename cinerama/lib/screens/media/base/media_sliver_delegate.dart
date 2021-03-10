@@ -1,6 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
-import '../../../global/app_routes.dart';
+import '../../../global/navigation/app_navigation.dart';
 import '../../../global/tmdb_helper_mixin.dart';
 import '../../../material.dart';
 import '../../../models/tmdb_resumed_media.dart';

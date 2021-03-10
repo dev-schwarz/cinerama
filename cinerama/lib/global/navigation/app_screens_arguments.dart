@@ -1,7 +1,4 @@
-import 'package:flutter/foundation.dart';
-import 'package:tmdb_repository/tmdb_repository.dart';
-
-import '../models/tmdb_resumed_media.dart';
+part of 'app_navigation.dart';
 
 @immutable
 class TvSeasonScreenArgs {

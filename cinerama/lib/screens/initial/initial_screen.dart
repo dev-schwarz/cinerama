@@ -2,7 +2,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';
 
-import '../../global/app_routes.dart';
+import '../../global/navigation/app_navigation.dart';
 import '../../material.dart';
 import '../../stores/login/login_store.dart';
 

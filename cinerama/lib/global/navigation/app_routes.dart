@@ -1,4 +1,4 @@
-export 'app_screens_arguments.dart';
+part of 'app_navigation.dart';
 
 class AppRoutes {
   const AppRoutes._();

@@ -3,7 +3,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:tmdb_repository/tmdb_repository.dart';
 
 import '../../../global/app_constants.dart';
-import '../../../global/app_routes.dart';
+import '../../../global/navigation/app_navigation.dart';
 import '../../../global/tmdb_helper_mixin.dart';
 import '../../../material.dart';
 import '../../../models/app_config.dart';

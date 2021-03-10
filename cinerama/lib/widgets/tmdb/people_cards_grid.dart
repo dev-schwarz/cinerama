@@ -1,7 +1,7 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
 import '../../global/app_constants.dart';
-import '../../global/app_routes.dart';
+import '../../global/navigation/app_navigation.dart';
 import '../../material.dart';
 import '../../models/app_config.dart';
 

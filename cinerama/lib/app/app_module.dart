@@ -1,7 +1,7 @@
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:tmdb_repository/tmdb_repository.dart';
 
-import '../global/app_routes.dart';
+import '../global/navigation/app_navigation.dart';
 import '../material.dart';
 import '../screens/drawer_screens/about/about_screen.dart';
 import '../screens/drawer_screens/settings/settings_screen.dart';
