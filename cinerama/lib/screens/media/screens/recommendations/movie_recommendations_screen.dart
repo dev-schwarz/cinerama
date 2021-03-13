@@ -2,12 +2,12 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:tmdb_repository/tmdb_repository.dart';
 
 import '../../../../material.dart';
-import '../../../../stores/results/movie_recommendations_store.dart';
+import '../../../../stores/results/movie_resources_store.dart';
 
 class MovieRecommendationsScreen extends StatelessWidget {
   const MovieRecommendationsScreen(this.store, {Key key}) : super(key: key);
 
-  final MovieRecommendationsStore store;
+  final MovieRecommendationsResourceStore store;
 
   @override
   Widget build(BuildContext context) {

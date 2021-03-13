@@ -140,6 +140,11 @@ void main() async {
       MovieRecommendations r = await api.account4.getMovieRecommendations();
       print(r);
     });
+
+    test('ACCOUNT v4 -> get tv recommendations', () async {
+      TvRecommendations r = await api.account4.getTvRecommendations();
+      print(r);
+    });
   });
 
   group('CONFIGURATION', () {

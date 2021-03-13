@@ -27,8 +27,8 @@ import '../services/tmdb_service.dart';
 import '../stores/controllers/home_screen_controller.dart';
 import '../stores/login/login_store.dart';
 import '../stores/media/media_store.dart';
-import '../stores/results/movie_recommendations_store.dart';
-import '../stores/results/tv_recommendations_store.dart';
+import '../stores/results/movie_resources_store.dart';
+import '../stores/results/tv_resources_store.dart';
 import '../stores/settings_store.dart';
 import '../stores/user_data/user_data_store.dart';
 import 'app_widget.dart';
@@ -42,6 +42,7 @@ class AppModule extends MainModule {
         Bind((i) => LoginStore(clearUserData: false)),
         Bind((i) => UserDataStore()),
         Bind((i) => HomeScreenController()),
+        // Bind((i) => Reco2ScreenController()),
       ];
 
   @override
@@ -113,7 +114,7 @@ class AppModule extends MainModule {
         ModularRouter(AppRoutes.movieRecommendations, child: (_, args) {
           final RecommendationsScreenArgs data = args.data;
           return MovieRecommendationsScreen(
-            MovieRecommendationsStore(
+            MovieRecommendationsResourceStore(
               resumedMedia: data.resumedMedia,
             ),
           );
@@ -121,7 +122,7 @@ class AppModule extends MainModule {
         ModularRouter(AppRoutes.tvRecommendations, child: (_, args) {
           final RecommendationsScreenArgs data = args.data;
           return TvRecommendationsScreen(
-            TvRecommendationsStore(
+            TvRecommendationsResourceStore(
               resumedMedia: data.resumedMedia,
             ),
           );

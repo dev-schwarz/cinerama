@@ -6,13 +6,14 @@ import '../../models/app_config.dart';
 import '../../models/tmdb_resumed_media.dart';
 import 'results_store.dart';
 
-part 'movie_recommendations_store.g.dart';
+part 'movie_resources_store.g.dart';
 
-class MovieRecommendationsStore = _MovieRecommendationsStoreBase with _$MovieRecommendationsStore;
+class MovieRecommendationsResourceStore = _MovieRecommendationsResourceStoreBase
+    with _$MovieRecommendationsResourceStore;
 
-abstract class _MovieRecommendationsStoreBase extends ResultsStore<MovieRecommendations>
+abstract class _MovieRecommendationsResourceStoreBase extends ResultsStore<MovieRecommendations>
     with Store {
-  _MovieRecommendationsStoreBase({@required this.resumedMedia});
+  _MovieRecommendationsResourceStoreBase({@required this.resumedMedia});
 
   final TmdbResumedMedia resumedMedia;
 

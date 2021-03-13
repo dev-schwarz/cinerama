@@ -39,9 +39,9 @@ class _ScreensTitles {
         desc: '[Screens][ScreensTitles]',
       );
 
-  String get assignments => Intl.message(
-        'Assignments',
-        name: '_ScreensTitles_assignments',
+  String get recommendations => Intl.message(
+        'Recommendations',
+        name: '_ScreensTitles_recommendations',
         desc: '[Screens][ScreensTitles]',
       );
 

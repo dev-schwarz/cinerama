@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2021-03-07T22:17:25.919477",
+  "@@last_modified": "2021-03-13T00:28:23.045409",
   "appTitle": "Cinerama",
   "@appTitle": {
     "description": "App main title",
@@ -176,8 +176,8 @@
     "type": "text",
     "placeholders": {}
   },
-  "_ScreensTitles_assignments": "Assignments",
-  "@_ScreensTitles_assignments": {
+  "_ScreensTitles_recommendations": "Recommendations",
+  "@_ScreensTitles_recommendations": {
     "description": "[Screens][ScreensTitles]",
     "type": "text",
     "placeholders": {}

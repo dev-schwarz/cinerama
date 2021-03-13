@@ -6,6 +6,7 @@ import '../../stores/controllers/home_screen_controller.dart';
 import '../../stores/results/trending_store.dart';
 import '../discover/discover_movies_screen.dart';
 import '../library/library_screen.dart';
+import '../recommendations/recommendations_screen.dart';
 import '../trending/trending_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -34,9 +35,9 @@ class _HomeScreenState extends ModularState<HomeScreen, HomeScreenController> {
         child: const DiscoverMoviesScreen(),
       ),
       _BottomNavBarItemData(
-        icon: Icons.assignment,
-        label: context.i18n.screens.titles.assignments,
-        child: _TempScreen(context.i18n.screens.titles.assignments),
+        icon: Icons.recommend,
+        label: context.i18n.screens.titles.recommendations,
+        child: const RecommendationsScreen(),
       ),
       _BottomNavBarItemData(
         icon: Icons.video_library,

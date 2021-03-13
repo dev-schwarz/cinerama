@@ -33,6 +33,8 @@ abstract class _ResultsStoreBase<T extends TResultsObject> with Store {
   @computed
   bool get hasResults => (_isLoaded || _isLoading) && (results != null);
 
+  int get resultsNextPageIndex => (results?.page ?? 0) + 1;
+
   @action
   Future<T> fetchResults() async {
     results = null;

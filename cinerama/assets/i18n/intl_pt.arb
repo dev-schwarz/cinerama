@@ -177,9 +177,9 @@
     "type": "text",
     "placeholders": {}
   },
-  "_ScreensTitles_assignments": "Inscrições",
-  "@_ScreensTitles_assignments": {
-    "description": "[Screens]",
+  "_ScreensTitles_recommendations": "Recomendações",
+  "@_ScreensTitles_recommendations": {
+    "description": "[Screens][ScreensTitles]",
     "type": "text",
     "placeholders": {}
   },

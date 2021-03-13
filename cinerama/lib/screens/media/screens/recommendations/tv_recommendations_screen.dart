@@ -2,12 +2,12 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:tmdb_repository/tmdb_repository.dart';
 
 import '../../../../material.dart';
-import '../../../../stores/results/tv_recommendations_store.dart';
+import '../../../../stores/results/tv_resources_store.dart';
 
 class TvRecommendationsScreen extends StatelessWidget {
   const TvRecommendationsScreen(this.store, {Key key}) : super(key: key);
 
-  final TvRecommendationsStore store;
+  final TvRecommendationsResourceStore store;
 
   @override
   Widget build(BuildContext context) {

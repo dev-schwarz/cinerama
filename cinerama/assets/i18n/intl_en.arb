@@ -177,8 +177,8 @@
     "type": "text",
     "placeholders": {}
   },
-  "_ScreensTitles_assignments": "Assignments",
-  "@_ScreensTitles_assignments": {
+  "_ScreensTitles_recommendations": "Recommendations",
+  "@_ScreensTitles_recommendations": {
     "description": "[Screens][ScreensTitles]",
     "type": "text",
     "placeholders": {}
