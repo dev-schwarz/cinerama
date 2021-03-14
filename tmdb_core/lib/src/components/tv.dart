@@ -51,6 +51,15 @@ class CoreTv {
     return _core._query3('$_startPoint/$id/recommendations', params: params);
   }
 
+  /// Get a list of similar TV shows.
+  Future<Map> getSimilarTvs(int id, {String language, int page}) {
+    _checkNotNull(id, 'id');
+    _Params params = _Params();
+    params['language'] = language;
+    params['page'] = page;
+    return _core._query3('$_startPoint/$id/similar', params: params);
+  }
+
   /// Rate a tv show.
   ///
   /// A valid session or guest session ID is required.

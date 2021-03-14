@@ -25,8 +25,8 @@ class TvEpisodeScreenArgs {
 }
 
 @immutable
-class RecommendationsScreenArgs {
-  const RecommendationsScreenArgs({@required this.resumedMedia});
+class MediaResourcesScreenArgs {
+  const MediaResourcesScreenArgs({@required this.resumedMedia});
 
   final TmdbResumedMedia resumedMedia;
 }

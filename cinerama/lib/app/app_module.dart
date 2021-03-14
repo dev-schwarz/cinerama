@@ -16,8 +16,10 @@ import '../screens/login/login_screen.dart';
 import '../screens/login/tmdb_access/tmdb_access_module.dart';
 import '../screens/media/screens/movie_screen.dart';
 import '../screens/media/screens/person_screen.dart';
-import '../screens/media/screens/recommendations/movie_recommendations_screen.dart';
-import '../screens/media/screens/recommendations/tv_recommendations_screen.dart';
+import '../screens/media/screens/resources/movie_recommendations_screen.dart';
+import '../screens/media/screens/resources/movie_similar_screen.dart';
+import '../screens/media/screens/resources/tv_recommendations_screen.dart';
+import '../screens/media/screens/resources/tv_similar_screen.dart';
 import '../screens/media/screens/tv_episode_screen.dart';
 import '../screens/media/screens/tv_screen.dart';
 import '../screens/media/screens/tv_season_screen.dart';
@@ -112,17 +114,33 @@ class AppModule extends MainModule {
           );
         }),
         ModularRouter(AppRoutes.movieRecommendations, child: (_, args) {
-          final RecommendationsScreenArgs data = args.data;
+          final MediaResourcesScreenArgs data = args.data;
           return MovieRecommendationsScreen(
             MovieRecommendationsResourceStore(
               resumedMedia: data.resumedMedia,
             ),
           );
         }),
+        ModularRouter(AppRoutes.movieSimilar, child: (_, args) {
+          final MediaResourcesScreenArgs data = args.data;
+          return MovieSimilarScreen(
+            MovieSimilarResourceStore(
+              resumedMedia: data.resumedMedia,
+            ),
+          );
+        }),
         ModularRouter(AppRoutes.tvRecommendations, child: (_, args) {
-          final RecommendationsScreenArgs data = args.data;
+          final MediaResourcesScreenArgs data = args.data;
           return TvRecommendationsScreen(
             TvRecommendationsResourceStore(
+              resumedMedia: data.resumedMedia,
+            ),
+          );
+        }),
+        ModularRouter(AppRoutes.tvSimilar, child: (_, args) {
+          final MediaResourcesScreenArgs data = args.data;
+          return TvSimilarScreen(
+            TvSimilarResourceStore(
               resumedMedia: data.resumedMedia,
             ),
           );

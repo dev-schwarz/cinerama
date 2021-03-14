@@ -298,6 +298,11 @@ void main() async {
       print(r);
     });
 
+    test('MOVIES -> get similar movies', () async {
+      Map r = await api.movies.getSimilarMovies(512);
+      print(r);
+    });
+
     test('MOVIES -> rate', () async {
       Map r = await api.movies.rateMovie(512, 5.0);
       print(r);
@@ -372,6 +377,11 @@ void main() async {
 
     test('TV -> get recommendations', () async {
       Map r = await api.tv.getRecommendations(1668);
+      print(r);
+    });
+
+    test('TV -> get similar tv shows', () async {
+      Map r = await api.tv.getSimilarTvs(1668);
       print(r);
     });
 

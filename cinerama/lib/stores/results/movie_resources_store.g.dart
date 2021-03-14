@@ -17,3 +17,12 @@ mixin _$MovieRecommendationsResourceStore
     ''';
   }
 }
+
+mixin _$MovieSimilarResourceStore on _MovieSimilarResourceStoreBase, Store {
+  @override
+  String toString() {
+    return '''
+
+    ''';
+  }
+}

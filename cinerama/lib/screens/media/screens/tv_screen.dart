@@ -135,12 +135,28 @@ class _TvScreenState extends State<TvScreen> with MediaHelperMixin<Tv, TvScreen>
       onPressed: () {
         Modular.to.pushNamed(
           AppRoutes.tvRecommendations,
-          arguments: RecommendationsScreenArgs(
+          arguments: MediaResourcesScreenArgs(
             resumedMedia: resumedMedia,
           ),
         );
       },
       child: Text(context.i18n.screens.tvDetails.btnRecommendations),
+    );
+  }
+
+  Widget _similarButton() {
+    return FlatButton(
+      textColor: Colors.blue,
+      onPressed: () {
+        Modular.to.pushNamed(
+          AppRoutes.tvSimilar,
+          arguments: MediaResourcesScreenArgs(
+            resumedMedia: resumedMedia,
+          ),
+        );
+      },
+      // TODO: Add localizations here!
+      child: Text('Similar Tvs'),
     );
   }
 
@@ -172,10 +188,11 @@ class _TvScreenState extends State<TvScreen> with MediaHelperMixin<Tv, TvScreen>
       ),
     ]);
 
-    // [[ recommendations ]]
-    items.add(
+    // [[ recommendations / similar ]]
+    items.addAll([
       _recommendationsButton(),
-    );
+      _similarButton(),
+    ]);
 
     // [[ created by ]]
     if (mediaDetails.createdBy != null && mediaDetails.createdBy.isNotEmpty) {

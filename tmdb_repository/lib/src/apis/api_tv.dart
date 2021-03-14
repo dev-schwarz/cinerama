@@ -32,6 +32,16 @@ class ApiTv {
     return TvRecommendations.fromJson(json);
   }
 
+  /// Get a list of similar TV shows.
+  Future<SimilarTvs> getSimilarTvs(int id, {int page, String language}) async {
+    Map json = await _api.tv.getSimilarTvs(
+      id,
+      page: page,
+      language: language,
+    );
+    return SimilarTvs.fromJson(json);
+  }
+
   /// Rate a tv show.
   ///
   /// A valid session or guest session ID is required.

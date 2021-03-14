@@ -343,6 +343,26 @@ Map<String, dynamic> _$TvSeasonToJson(TvSeason instance) => <String, dynamic>{
       'images': instance.images,
     };
 
+SimilarTvs _$SimilarTvsFromJson(Map<String, dynamic> json) {
+  return SimilarTvs(
+    page: json['page'] as int,
+    totalPages: json['total_pages'] as int,
+    totalResults: json['total_results'] as int,
+    results: (json['results'] as List)
+        ?.map((e) =>
+            e == null ? null : TvResumed.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
+  );
+}
+
+Map<String, dynamic> _$SimilarTvsToJson(SimilarTvs instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'total_pages': instance.totalPages,
+      'total_results': instance.totalResults,
+      'results': instance.results,
+    };
+
 TopRatedTvs _$TopRatedTvsFromJson(Map<String, dynamic> json) {
   return TopRatedTvs(
     page: json['page'] as int,

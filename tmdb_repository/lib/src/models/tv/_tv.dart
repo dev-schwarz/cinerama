@@ -17,4 +17,5 @@ part 'tv_rating.dart';
 part 'tv_recommendations.dart';
 part 'tv_resumed.dart';
 part 'tv_season.dart';
+part 'tv_similar.dart';
 part 'tv_top_rated.dart';

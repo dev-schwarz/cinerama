@@ -21,7 +21,9 @@ class AppRoutes {
   static const String tvEpisodeDetails = '/tv-episode-details';
   static const String personDetails = '/person-details';
   static const String movieRecommendations = '/movie-recommendations';
+  static const String movieSimilar = '/movie-similar';
   static const String tvRecommendations = '/tv-recommendations';
+  static const String tvSimilar = '/tv-similar';
 
   static const String libraryFavoriteMovies = '/library-favorite-movies';
   static const String libraryFavoriteTvs = '/library-favorite-tvs';

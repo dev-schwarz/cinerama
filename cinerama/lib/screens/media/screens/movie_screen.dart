@@ -77,10 +77,24 @@ class _MovieScreenState extends State<MovieScreen>
       onPressed: () {
         Modular.to.pushNamed(
           AppRoutes.movieRecommendations,
-          arguments: RecommendationsScreenArgs(resumedMedia: resumedMedia),
+          arguments: MediaResourcesScreenArgs(resumedMedia: resumedMedia),
         );
       },
       child: Text(context.i18n.screens.movieDetails.btnRecommendations),
+    );
+  }
+
+  Widget _similarButton() {
+    return FlatButton(
+      textColor: Colors.blue,
+      onPressed: () {
+        Modular.to.pushNamed(
+          AppRoutes.movieSimilar,
+          arguments: MediaResourcesScreenArgs(resumedMedia: resumedMedia),
+        );
+      },
+      // TODO: Add localizations here!
+      child: Text('Similar'),
     );
   }
 
@@ -124,10 +138,11 @@ class _MovieScreenState extends State<MovieScreen>
       divider(8.0),
     ]);
 
-    // [[ recommendations ]]
-    items.add(
+    // [[ recommendations /  similar ]]
+    items.addAll([
       _recommendationsButton(),
-    );
+      _similarButton(),
+    ]);
 
     // [[ overview ]]
     items.add(

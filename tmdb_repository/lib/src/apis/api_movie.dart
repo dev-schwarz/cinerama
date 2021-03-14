@@ -38,6 +38,16 @@ class ApiMovie {
     return MovieRecommendations.fromJson(json);
   }
 
+  /// Get a list of similar movies.
+  Future<SimilarMovies> getSimilarMovies(int id, {int page, String language}) async {
+    Map json = await _api.movies.getSimilarMovies(
+      id,
+      page: page,
+      language: language,
+    );
+    return SimilarMovies.fromJson(json);
+  }
+
   /// Rate a movie.
   ///
   /// A valid session or guest session ID is required.

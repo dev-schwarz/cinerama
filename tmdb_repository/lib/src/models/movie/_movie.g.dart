@@ -218,6 +218,26 @@ Map<String, dynamic> _$MovieResumedToJson(MovieResumed instance) =>
       'rating': instance.rating,
     };
 
+SimilarMovies _$SimilarMoviesFromJson(Map<String, dynamic> json) {
+  return SimilarMovies(
+    page: json['page'] as int,
+    totalPages: json['total_pages'] as int,
+    totalResults: json['total_results'] as int,
+    results: (json['results'] as List)
+        ?.map((e) =>
+            e == null ? null : MovieResumed.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
+  );
+}
+
+Map<String, dynamic> _$SimilarMoviesToJson(SimilarMovies instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'total_pages': instance.totalPages,
+      'total_results': instance.totalResults,
+      'results': instance.results,
+    };
+
 TopRatedMovies _$TopRatedMoviesFromJson(Map<String, dynamic> json) {
   return TopRatedMovies(
     page: json['page'] as int,

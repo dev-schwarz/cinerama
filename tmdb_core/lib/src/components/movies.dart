@@ -59,6 +59,15 @@ class CoreMovies {
     return _core._query3('$_startPoint/$id/recommendations', params: params);
   }
 
+  /// Get a list of similar movies.
+  Future<Map> getSimilarMovies(int id, {String language, int page}) {
+    _checkNotNull(id, 'id');
+    _Params params = _Params();
+    params['language'] = language;
+    params['page'] = page;
+    return _core._query3('$_startPoint/$id/similar', params: params);
+  }
+
   /// Rate a movie.
   ///
   /// A valid session or guest session ID is required.

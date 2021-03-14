@@ -14,4 +14,5 @@ part 'movie_popular.dart';
 part 'movie_rating.dart';
 part 'movie_recommendations.dart';
 part 'movie_resumed.dart';
+part 'movie_similar.dart';
 part 'movie_top_rated.dart';

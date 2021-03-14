@@ -258,6 +258,14 @@ void main() async {
       print(r);
     });
 
+    test('MOVIE -> get similar movies', () async {
+      SimilarMovies r = await api.movie.getSimilarMovies(
+        419704,
+        language: 'pt-BR',
+      );
+      print(r);
+    });
+
     test('MOVIE -> rate', () async {
       // RateMovie r = await api.movie.rateMovie(419704, 6.5);
       RateMovie r = await api.movie.rateMovie(85853, 6.5);
@@ -338,6 +346,14 @@ void main() async {
         language: 'pt-BR',
       );
 //      expect(r, MovieRecommendations.fromJson(r.toJson()));
+      print(r);
+    });
+
+    test('TV -> get similar tv shows', () async {
+      SimilarTvs r = await api.tv.getSimilarTvs(
+        1668,
+        language: 'pt-BR',
+      );
       print(r);
     });
 
